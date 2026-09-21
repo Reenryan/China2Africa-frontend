@@ -1,0 +1,405 @@
+.business-procurement-hero {
+  background-color: #ffffff;
+  padding: 90px 0 80px;
+  overflow: hidden;
+}
+
+.business-procurement-hero-container {
+  width: min(1180px, 92%);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 70px;
+}
+
+/* =========================
+   LEFT CONTENT
+========================= */
+
+.business-procurement-hero-content {
+  max-width: 650px;
+}
+
+.business-procurement-hero-eyebrow {
+  display: inline-block;
+
+  margin-bottom: 20px;
+
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  color: #087a55;
+}
+
+.business-procurement-hero-title {
+  margin-bottom: 24px;
+
+  font-size: clamp(40px, 4.5vw, 62px);
+  line-height: 1.08;
+  font-weight: 800;
+
+  color: #142235;
+}
+
+.business-procurement-hero-title span {
+  color: #087a55;
+}
+
+.business-procurement-hero-description {
+  max-width: 590px;
+
+  margin-bottom: 34px;
+
+  font-size: 17px;
+  line-height: 1.75;
+
+  color: #5b6878;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.business-procurement-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  margin-bottom: 42px;
+}
+
+.business-procurement-hero-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  min-height: 52px;
+  padding: 0 22px;
+
+  border-radius: 7px;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.business-procurement-hero-button-primary {
+  background-color: #087a55;
+  color: #ffffff;
+}
+
+.business-procurement-hero-button-primary:hover {
+  background-color: #066847;
+  transform: translateY(-2px);
+
+  box-shadow: 0 10px 24px rgba(8, 122, 85, 0.18);
+}
+
+.business-procurement-hero-button-secondary {
+  border: 1px solid #d7dee5;
+
+  background-color: #ffffff;
+  color: #142235;
+}
+
+.business-procurement-hero-button-secondary:hover {
+  border-color: #087a55;
+  color: #087a55;
+
+  transform: translateY(-2px);
+}
+
+/* =========================
+   TRUST ITEMS
+========================= */
+
+.business-procurement-hero-trust {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.business-procurement-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 12px;
+  line-height: 1.35;
+  font-weight: 600;
+
+  color: #526171;
+}
+
+.business-procurement-trust-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 36px;
+  height: 36px;
+
+  border-radius: 50%;
+
+  background-color: #eef8f4;
+
+  font-size: 17px;
+}
+
+.business-procurement-trust-divider {
+  width: 1px;
+  height: 38px;
+
+  background-color: #dce2e7;
+}
+
+/* =========================
+   RIGHT VISUAL
+========================= */
+
+.business-procurement-hero-visual {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  max-width: 470px;
+
+  margin-left: auto;
+
+  padding: 20px 0;
+}
+
+.business-procurement-route-card {
+  position: relative;
+  z-index: 2;
+
+  width: min(100%, 360px);
+
+  display: flex;
+  align-items: center;
+  gap: 17px;
+
+  padding: 20px 22px;
+
+  border: 1px solid #e1e8e4;
+  border-radius: 12px;
+
+  background-color: #ffffff;
+
+  box-shadow: 0 12px 35px rgba(20, 34, 53, 0.08);
+}
+
+.business-procurement-route-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  width: 52px;
+  height: 52px;
+
+  border-radius: 10px;
+
+  background-color: #eef8f4;
+
+  font-size: 25px;
+}
+
+.business-procurement-route-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.business-procurement-route-content span {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+
+  color: #8793a0;
+}
+
+.business-procurement-route-content strong {
+  font-size: 17px;
+  font-weight: 750;
+
+  color: #142235;
+}
+
+/* =========================
+   ROUTE LINES
+========================= */
+
+.business-procurement-route-line {
+  width: 2px;
+  height: 32px;
+
+  background-color: #b9dace;
+
+  position: relative;
+}
+
+.business-procurement-route-line::after {
+  content: "↓";
+
+  position: absolute;
+  left: 50%;
+  bottom: -13px;
+
+  transform: translateX(-50%);
+
+  font-size: 15px;
+  font-weight: 700;
+
+  color: #087a55;
+}
+
+/* Slight variation for visual hierarchy */
+
+.business-procurement-procurement-card {
+  border-color: #b8ddcf;
+}
+
+.business-procurement-procurement-card .business-procurement-route-icon {
+  background-color: #087a55;
+}
+
+.business-procurement-procurement-card .business-procurement-route-icon {
+  filter: grayscale(1) brightness(0) invert(1);
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 950px) {
+  .business-procurement-hero {
+    padding: 75px 0 70px;
+  }
+
+  .business-procurement-hero-container {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .business-procurement-hero-content {
+    max-width: 760px;
+  }
+
+  .business-procurement-hero-description {
+    max-width: 700px;
+  }
+
+  .business-procurement-hero-visual {
+    margin: 0 auto;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  .business-procurement-hero {
+    padding: 60px 0 55px;
+  }
+
+  .business-procurement-hero-container {
+    width: 90%;
+    gap: 48px;
+  }
+
+  .business-procurement-hero-eyebrow {
+    margin-bottom: 15px;
+
+    font-size: 11px;
+    letter-spacing: 1.6px;
+  }
+
+  .business-procurement-hero-title {
+    margin-bottom: 20px;
+
+    font-size: 39px;
+    line-height: 1.1;
+  }
+
+  .business-procurement-hero-description {
+    margin-bottom: 28px;
+
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .business-procurement-hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+
+    margin-bottom: 35px;
+  }
+
+  .business-procurement-hero-button {
+    width: 100%;
+  }
+
+  .business-procurement-hero-trust {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .business-procurement-trust-divider {
+    display: none;
+  }
+
+  .business-procurement-route-card {
+    width: 100%;
+    padding: 17px 18px;
+  }
+
+  .business-procurement-route-icon {
+    width: 45px;
+    height: 45px;
+
+    font-size: 21px;
+  }
+
+  .business-procurement-route-content strong {
+    font-size: 15px;
+  }
+
+  .business-procurement-route-line {
+    height: 27px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 380px) {
+  .business-procurement-hero-title {
+    font-size: 34px;
+  }
+
+  .business-procurement-hero-description {
+    font-size: 14px;
+  }
+
+  .business-procurement-route-card {
+    padding: 15px;
+  }
+}

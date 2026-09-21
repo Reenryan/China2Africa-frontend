@@ -1,0 +1,456 @@
+.product-sourcing-cta {
+  position: relative;
+  overflow: hidden;
+  padding: 105px 0;
+  background-color: #142235;
+}
+
+.product-sourcing-cta-container {
+  position: relative;
+  z-index: 2;
+
+  width: min(1180px, 92%);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(360px, 0.85fr);
+  align-items: center;
+  gap: 80px;
+}
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.product-sourcing-cta-content {
+  max-width: 700px;
+}
+
+.product-sourcing-cta-eyebrow {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+
+  color: #35c58d;
+}
+
+.product-sourcing-cta-title {
+  margin-bottom: 24px;
+
+  font-size: clamp(40px, 4.5vw, 60px);
+  line-height: 1.06;
+  letter-spacing: -2px;
+  font-weight: 800;
+
+  color: #ffffff;
+}
+
+.product-sourcing-cta-title span {
+  color: #35c58d;
+}
+
+.product-sourcing-cta-description {
+  max-width: 650px;
+  margin-bottom: 34px;
+
+  font-size: 16px;
+  line-height: 1.8;
+
+  color: #c5ced6;
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.product-sourcing-cta-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  margin-bottom: 36px;
+}
+
+.product-sourcing-cta-button {
+  min-height: 52px;
+  padding: 0 23px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  border-radius: 7px;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.product-sourcing-cta-button-primary {
+  background-color: #087a55;
+  color: #ffffff;
+}
+
+.product-sourcing-cta-button-primary:hover {
+  background-color: #0a9166;
+  transform: translateY(-3px);
+}
+
+.product-sourcing-cta-button-primary span {
+  font-size: 18px;
+  transition: transform 0.25s ease;
+}
+
+.product-sourcing-cta-button-primary:hover span {
+  transform: translateX(4px);
+}
+
+.product-sourcing-cta-button-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.product-sourcing-cta-button-secondary:hover {
+  border-color: rgba(255, 255, 255, 0.55);
+  background-color: rgba(255, 255, 255, 0.06);
+  transform: translateY(-3px);
+}
+
+/* =========================================
+   TRUST POINTS
+========================================= */
+
+.product-sourcing-cta-trust {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.product-sourcing-cta-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  color: #aebbc5;
+}
+
+.product-sourcing-cta-check {
+  width: 18px;
+  height: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background-color: rgba(53, 197, 141, 0.13);
+
+  color: #35c58d;
+
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.product-sourcing-cta-divider {
+  width: 1px;
+  height: 18px;
+
+  background-color: rgba(255, 255, 255, 0.16);
+}
+
+/* =========================================
+   VISUAL
+========================================= */
+
+.product-sourcing-cta-visual {
+  position: relative;
+
+  min-height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Decorative circles */
+
+.product-sourcing-cta-circle {
+  position: absolute;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(53, 197, 141, 0.16);
+}
+
+.product-sourcing-cta-circle-large {
+  width: 380px;
+  height: 380px;
+}
+
+.product-sourcing-cta-circle-medium {
+  width: 275px;
+  height: 275px;
+  background-color: rgba(8, 122, 85, 0.05);
+}
+
+/* =========================================
+   ROUTE CARDS
+========================================= */
+
+.product-sourcing-cta-card {
+  position: relative;
+  z-index: 3;
+
+  width: min(330px, 90%);
+
+  padding: 20px 22px;
+
+  display: flex;
+  align-items: center;
+  gap: 17px;
+
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 12px;
+
+  background-color: rgba(255, 255, 255, 0.07);
+
+  backdrop-filter: blur(10px);
+
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.18);
+}
+
+.product-sourcing-cta-card-africa {
+  margin-top: 65px;
+}
+
+.product-sourcing-cta-card-icon {
+  width: 50px;
+  height: 50px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background-color: rgba(255, 255, 255, 0.09);
+
+  font-size: 24px;
+}
+
+.product-sourcing-cta-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.product-sourcing-cta-card-content span {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+
+  color: #91a1ad;
+}
+
+.product-sourcing-cta-card-content strong {
+  font-size: 17px;
+  font-weight: 800;
+
+  color: #ffffff;
+}
+
+/* Route line */
+
+.product-sourcing-cta-route-line {
+  position: absolute;
+  z-index: 1;
+
+  width: 1px;
+  height: 65px;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(53, 197, 141, 0.8),
+    rgba(53, 197, 141, 0.05)
+  );
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 950px) {
+  .product-sourcing-cta {
+    padding: 85px 0;
+  }
+
+  .product-sourcing-cta-container {
+    grid-template-columns: 1fr;
+    gap: 65px;
+  }
+
+  .product-sourcing-cta-content {
+    max-width: 760px;
+  }
+
+  .product-sourcing-cta-visual {
+    min-height: 350px;
+  }
+
+  .product-sourcing-cta-circle-large {
+    width: 340px;
+    height: 340px;
+  }
+
+  .product-sourcing-cta-circle-medium {
+    width: 245px;
+    height: 245px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .product-sourcing-cta {
+    padding: 70px 0;
+  }
+
+  .product-sourcing-cta-container {
+    width: 92%;
+    gap: 45px;
+  }
+
+  .product-sourcing-cta-eyebrow {
+    margin-bottom: 15px;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+  }
+
+  .product-sourcing-cta-title {
+    margin-bottom: 19px;
+
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: -1.2px;
+  }
+
+  .product-sourcing-cta-description {
+    margin-bottom: 28px;
+
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  .product-sourcing-cta-actions {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+
+    margin-bottom: 30px;
+  }
+
+  .product-sourcing-cta-button {
+    width: 100%;
+  }
+
+  .product-sourcing-cta-trust {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 11px;
+  }
+
+  .product-sourcing-cta-divider {
+    display: none;
+  }
+
+  .product-sourcing-cta-visual {
+    min-height: 300px;
+  }
+
+  .product-sourcing-cta-circle-large {
+    width: 290px;
+    height: 290px;
+  }
+
+  .product-sourcing-cta-circle-medium {
+    width: 210px;
+    height: 210px;
+  }
+
+  .product-sourcing-cta-card {
+    width: min(320px, 92%);
+    padding: 17px 18px;
+  }
+
+  .product-sourcing-cta-card-africa {
+    margin-top: 55px;
+  }
+
+  .product-sourcing-cta-card-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 21px;
+  }
+
+  .product-sourcing-cta-card-content strong {
+    font-size: 15px;
+  }
+
+  .product-sourcing-cta-route-line {
+    height: 55px;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 360px) {
+  .product-sourcing-cta-container {
+    width: 94%;
+  }
+
+  .product-sourcing-cta-title {
+    font-size: 32px;
+  }
+
+  .product-sourcing-cta-description {
+    font-size: 13px;
+  }
+
+  .product-sourcing-cta-card {
+    width: 95%;
+  }
+
+  .product-sourcing-cta-circle-large {
+    width: 260px;
+    height: 260px;
+  }
+
+  .product-sourcing-cta-circle-medium {
+    width: 190px;
+    height: 190px;
+  }
+}

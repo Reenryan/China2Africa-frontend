@@ -1,0 +1,179 @@
+.sea-freight-cta {
+  width: 100%;
+  padding: 100px 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(15, 23, 42, 0.98),
+      rgba(30, 41, 59, 0.96)
+    );
+}
+
+.sea-freight-cta__container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.sea-freight-cta__content {
+  text-align: center;
+}
+
+/* EYEBROW */
+
+.sea-freight-cta__eyebrow {
+  display: inline-block;
+  margin-bottom: 18px;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  color: #f59e0b;
+}
+
+/* HEADING */
+
+.sea-freight-cta__content h2 {
+  margin: 0 0 22px;
+
+  font-size: clamp(2.3rem, 5vw, 3.8rem);
+  line-height: 1.12;
+  letter-spacing: -1px;
+
+  color: #ffffff;
+}
+
+.sea-freight-cta__content h2 span {
+  display: block;
+  color: #f59e0b;
+}
+
+/* DESCRIPTION */
+
+.sea-freight-cta__content > p {
+  max-width: 700px;
+  margin: 0 auto;
+
+  font-size: 1rem;
+  line-height: 1.8;
+
+  color: #cbd5e1;
+}
+
+/* ACTIONS */
+
+.sea-freight-cta__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  margin-top: 35px;
+}
+
+.sea-freight-cta__primary,
+.sea-freight-cta__secondary {
+  min-height: 52px;
+  padding: 0 28px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  font-size: 0.94rem;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* PRIMARY */
+
+.sea-freight-cta__primary {
+  background-color: #f59e0b;
+  color: #ffffff;
+}
+
+.sea-freight-cta__primary:hover {
+  background-color: #d97706;
+  transform: translateY(-2px);
+}
+
+/* SECONDARY */
+
+.sea-freight-cta__secondary {
+  border: 1px solid #475569;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.sea-freight-cta__secondary:hover {
+  border-color: #f59e0b;
+  color: #f59e0b;
+  transform: translateY(-2px);
+}
+
+/* NOTE */
+
+.sea-freight-cta__note {
+  margin-top: 25px !important;
+
+  font-size: 0.82rem !important;
+  line-height: 1.6 !important;
+
+  color: #94a3b8 !important;
+}
+
+/* TABLET */
+
+@media (max-width: 768px) {
+  .sea-freight-cta {
+    padding: 80px 20px;
+  }
+
+  .sea-freight-cta__content h2 {
+    font-size: 2.8rem;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .sea-freight-cta {
+    padding: 65px 16px;
+  }
+
+  .sea-freight-cta__content h2 {
+    font-size: 2.25rem;
+    letter-spacing: -0.5px;
+  }
+
+  .sea-freight-cta__content > p {
+    font-size: 0.92rem;
+    line-height: 1.7;
+  }
+
+  .sea-freight-cta__actions {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 28px;
+  }
+
+  .sea-freight-cta__primary,
+  .sea-freight-cta__secondary {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .sea-freight-cta__note {
+    font-size: 0.78rem !important;
+  }
+}

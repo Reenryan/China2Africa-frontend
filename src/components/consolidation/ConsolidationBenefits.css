@@ -1,0 +1,233 @@
+.consolidation-benefits {
+  padding: 105px 0;
+
+  background-color: #ffffff;
+}
+
+.consolidation-benefits-container {
+  width: min(1180px, 90%);
+  margin: 0 auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.consolidation-benefits-header {
+  max-width: 720px;
+
+  margin-bottom: 60px;
+}
+
+.consolidation-benefits-eyebrow {
+  display: inline-block;
+
+  margin-bottom: 18px;
+
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  color: #087a55;
+}
+
+.consolidation-benefits-title {
+  margin: 0 0 22px;
+
+  font-size: clamp(38px, 4vw, 52px);
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+
+  color: #142235;
+}
+
+.consolidation-benefits-title span {
+  color: #087a55;
+}
+
+.consolidation-benefits-intro {
+  max-width: 650px;
+
+  margin: 0;
+
+  font-size: 17px;
+  line-height: 1.7;
+
+  color: #5f6b7a;
+}
+
+/* =========================
+   BENEFIT GRID
+========================= */
+
+.consolidation-benefits-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 22px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.consolidation-benefit-card {
+  position: relative;
+
+  min-height: 270px;
+
+  padding: 30px;
+
+  background-color: #f7f9fb;
+
+  border: 1px solid #e4e9ee;
+  border-radius: 16px;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.consolidation-benefit-card:hover {
+  transform: translateY(-5px);
+
+  border-color: #cddbd5;
+
+  box-shadow: 0 18px 40px rgba(20, 34, 53, 0.08);
+}
+
+/* =========================
+   CARD TOP
+========================= */
+
+.consolidation-benefit-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 30px;
+}
+
+.consolidation-benefit-number {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  color: #9aa5b1;
+}
+
+.consolidation-benefit-icon {
+  width: 56px;
+  height: 56px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #e8f5ef;
+
+  border-radius: 14px;
+
+  font-size: 25px;
+}
+
+/* =========================
+   CARD CONTENT
+========================= */
+
+.consolidation-benefit-card h3 {
+  max-width: 360px;
+
+  margin: 0 0 12px;
+
+  font-size: 21px;
+  line-height: 1.3;
+
+  color: #142235;
+}
+
+.consolidation-benefit-card p {
+  max-width: 500px;
+
+  margin: 0;
+
+  font-size: 15px;
+  line-height: 1.7;
+
+  color: #687585;
+}
+
+/* =========================
+   BOTTOM LINE
+========================= */
+
+.consolidation-benefit-line {
+  width: 45px;
+  height: 3px;
+
+  margin-top: 25px;
+
+  background-color: #087a55;
+
+  border-radius: 5px;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 800px) {
+  .consolidation-benefits {
+    padding: 80px 0;
+  }
+
+  .consolidation-benefits-header {
+    margin-bottom: 45px;
+  }
+
+  .consolidation-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .consolidation-benefit-card {
+    min-height: auto;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  .consolidation-benefits {
+    padding: 65px 0;
+  }
+
+  .consolidation-benefits-container {
+    width: min(92%, 1180px);
+  }
+
+  .consolidation-benefits-title {
+    font-size: 38px;
+  }
+
+  .consolidation-benefits-intro {
+    font-size: 16px;
+  }
+
+  .consolidation-benefit-card {
+    padding: 24px;
+
+    border-radius: 14px;
+  }
+
+  .consolidation-benefit-top {
+    margin-bottom: 25px;
+  }
+
+  .consolidation-benefit-card h3 {
+    font-size: 19px;
+  }
+}

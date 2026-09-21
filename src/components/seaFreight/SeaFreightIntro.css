@@ -1,0 +1,254 @@
+.sea-freight-intro {
+  width: 100%;
+  padding: 100px 20px;
+
+  background-color: #ffffff;
+}
+
+.sea-freight-intro__container {
+  max-width: 1150px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.85fr);
+
+  gap: 80px;
+
+  align-items: center;
+}
+
+/* =========================
+   LEFT CONTENT
+========================= */
+
+.sea-freight-intro__content {
+  max-width: 620px;
+}
+
+.sea-freight-intro__eyebrow {
+  display: inline-block;
+
+  margin-bottom: 16px;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  color: #d97706;
+}
+
+.sea-freight-intro__content h2 {
+  margin: 0 0 24px;
+
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.2;
+
+  color: #0f172a;
+}
+
+.sea-freight-intro__content h2 span {
+  display: block;
+
+  color: #d97706;
+}
+
+.sea-freight-intro__content p {
+  margin: 0 0 18px;
+
+  font-size: 1rem;
+  line-height: 1.85;
+
+  color: #64748b;
+}
+
+.sea-freight-intro__content p:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================
+   INFORMATION CARD
+========================= */
+
+.sea-freight-intro__card {
+  padding: 34px;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+
+  background-color: #f8fafc;
+
+  box-shadow: 0 15px 40px rgba(15, 23, 42, 0.06);
+}
+
+/* =========================
+   CARD HEADER
+========================= */
+
+.sea-freight-intro__card-header {
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+}
+
+.sea-freight-intro__card-icon {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 14px;
+
+  background-color: #fff7ed;
+
+  font-size: 1.7rem;
+}
+
+.sea-freight-intro__card-label {
+  display: block;
+
+  margin-bottom: 5px;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+
+  color: #d97706;
+}
+
+.sea-freight-intro__card-header h3 {
+  margin: 0;
+
+  font-size: 1.45rem;
+
+  color: #0f172a;
+}
+
+.sea-freight-intro__card-header h3 span {
+  color: #d97706;
+}
+
+/* =========================
+   DIVIDER
+========================= */
+
+.sea-freight-intro__divider {
+  width: 100%;
+  height: 1px;
+
+  margin: 28px 0;
+
+  background-color: #e2e8f0;
+}
+
+/* =========================
+   DETAILS
+========================= */
+
+.sea-freight-intro__details {
+  display: flex;
+  flex-direction: column;
+
+  gap: 25px;
+}
+
+.sea-freight-intro__detail {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 15px;
+}
+
+.sea-freight-intro__detail-icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 10px;
+
+  background-color: #ffffff;
+
+  font-size: 1.1rem;
+}
+
+.sea-freight-intro__detail h4 {
+  margin: 0 0 5px;
+
+  font-size: 1rem;
+
+  color: #0f172a;
+}
+
+.sea-freight-intro__detail p {
+  margin: 0;
+
+  font-size: 0.88rem;
+  line-height: 1.65;
+
+  color: #64748b;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+  .sea-freight-intro {
+    padding: 80px 20px;
+  }
+
+  .sea-freight-intro__container {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+  .sea-freight-intro__content {
+    max-width: 750px;
+  }
+
+  .sea-freight-intro__card {
+    max-width: 750px;
+    width: 100%;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  .sea-freight-intro {
+    padding: 65px 16px;
+  }
+
+  .sea-freight-intro__content h2 {
+    font-size: 1.9rem;
+  }
+
+  .sea-freight-intro__content p {
+    font-size: 0.92rem;
+    line-height: 1.75;
+  }
+
+  .sea-freight-intro__card {
+    padding: 25px;
+  }
+
+  .sea-freight-intro__card-header h3 {
+    font-size: 1.25rem;
+  }
+
+  .sea-freight-intro__detail p {
+    font-size: 0.85rem;
+  }
+}

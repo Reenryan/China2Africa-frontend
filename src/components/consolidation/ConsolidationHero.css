@@ -1,0 +1,332 @@
+.consolidation-hero {
+  background-color: #ffffff;
+  padding: 90px 0 100px;
+}
+
+.consolidation-hero-container {
+  width: min(1180px, 90%);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 70px;
+}
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.consolidation-hero-content {
+  max-width: 600px;
+}
+
+.consolidation-hero-eyebrow {
+  display: inline-block;
+
+  margin-bottom: 20px;
+
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  color: #087a55;
+}
+
+.consolidation-hero-title {
+  margin: 0 0 24px;
+
+  font-size: clamp(42px, 5vw, 64px);
+  line-height: 1.08;
+  letter-spacing: -2px;
+
+  color: #142235;
+}
+
+.consolidation-hero-title span {
+  color: #087a55;
+}
+
+.consolidation-hero-description {
+  max-width: 560px;
+
+  margin-bottom: 34px;
+
+  font-size: 18px;
+  line-height: 1.7;
+
+  color: #5f6b7a;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.consolidation-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  flex-wrap: wrap;
+}
+
+.consolidation-hero-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  min-height: 52px;
+  padding: 0 24px;
+
+  border-radius: 8px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.consolidation-hero-button:hover {
+  transform: translateY(-2px);
+}
+
+.consolidation-hero-button-primary {
+  background-color: #087a55;
+  color: #ffffff;
+}
+
+.consolidation-hero-button-primary:hover {
+  background-color: #065f43;
+}
+
+.consolidation-hero-button-primary span {
+  font-size: 20px;
+}
+
+.consolidation-hero-button-secondary {
+  background-color: #ffffff;
+  color: #142235;
+
+  border: 1px solid #d9e0e7;
+}
+
+.consolidation-hero-button-secondary:hover {
+  border-color: #087a55;
+  color: #087a55;
+}
+
+/* =========================
+   HERO VISUAL
+========================= */
+
+.consolidation-hero-visual {
+  position: relative;
+
+  min-height: 500px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.consolidation-hero-image-wrapper {
+  width: 100%;
+  height: 500px;
+
+  overflow: hidden;
+
+  border-radius: 22px;
+
+  box-shadow: 0 20px 50px rgba(20, 34, 53, 0.14);
+}
+
+.consolidation-hero-image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+/* =========================
+   COUNTRY BADGES
+========================= */
+
+.consolidation-country-badge {
+  position: absolute;
+
+  width: 64px;
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #ffffff;
+
+  border-radius: 50%;
+
+  font-size: 30px;
+
+  box-shadow: 0 10px 30px rgba(20, 34, 53, 0.16);
+}
+
+.consolidation-china-badge {
+  top: 40px;
+  left: -25px;
+}
+
+.consolidation-africa-badge {
+  right: -25px;
+  bottom: 90px;
+}
+
+/* =========================
+   ROUTE LABEL
+========================= */
+
+.consolidation-route {
+  position: absolute;
+
+  right: 25px;
+  bottom: 25px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 10px 16px;
+
+  background-color: rgba(255, 255, 255, 0.95);
+
+  border-radius: 30px;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  color: #142235;
+
+  box-shadow: 0 8px 25px rgba(20, 34, 53, 0.12);
+}
+
+.consolidation-route span:nth-child(2) {
+  color: #087a55;
+  font-size: 16px;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+  .consolidation-hero {
+    padding: 70px 0 80px;
+  }
+
+  .consolidation-hero-container {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+  .consolidation-hero-content {
+    max-width: 750px;
+  }
+
+  .consolidation-hero-description {
+    max-width: 700px;
+  }
+
+  .consolidation-hero-visual {
+    min-height: 450px;
+  }
+
+  .consolidation-hero-image-wrapper {
+    height: 450px;
+  }
+
+  .consolidation-china-badge {
+    left: 20px;
+  }
+
+  .consolidation-africa-badge {
+    right: 20px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  .consolidation-hero {
+    padding: 55px 0 65px;
+  }
+
+  .consolidation-hero-container {
+    width: min(92%, 1180px);
+    gap: 40px;
+  }
+
+  .consolidation-hero-title {
+    font-size: 42px;
+    letter-spacing: -1.5px;
+  }
+
+  .consolidation-hero-description {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .consolidation-hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .consolidation-hero-button {
+    width: 100%;
+  }
+
+  .consolidation-hero-visual {
+    min-height: 350px;
+  }
+
+  .consolidation-hero-image-wrapper {
+    height: 350px;
+    border-radius: 16px;
+  }
+
+  .consolidation-country-badge {
+    width: 52px;
+    height: 52px;
+
+    font-size: 24px;
+  }
+
+  .consolidation-china-badge {
+    top: 20px;
+    left: 10px;
+  }
+
+  .consolidation-africa-badge {
+    right: 10px;
+    bottom: 70px;
+  }
+
+  .consolidation-route {
+    right: 15px;
+    bottom: 15px;
+
+    padding: 8px 12px;
+
+    font-size: 9px;
+  }
+}

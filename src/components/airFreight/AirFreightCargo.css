@@ -1,0 +1,382 @@
+.air-freight-cargo {
+  width: 100%;
+  padding: 100px 20px;
+
+  background-color: #ffffff;
+}
+
+.air-freight-cargo__container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.air-freight-cargo__header {
+  max-width: 750px;
+  margin: 0 auto 65px;
+
+  text-align: center;
+}
+
+.air-freight-cargo__eyebrow {
+  display: inline-block;
+
+  margin-bottom: 16px;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  color: #d97706;
+}
+
+.air-freight-cargo__header h2 {
+  margin: 0 0 20px;
+
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.2;
+
+  color: #0f172a;
+}
+
+.air-freight-cargo__header h2 span {
+  display: block;
+
+  color: #d97706;
+}
+
+.air-freight-cargo__header p {
+  margin: 0;
+
+  font-size: 1rem;
+  line-height: 1.8;
+
+  color: #64748b;
+}
+
+
+/* Main content */
+
+.air-freight-cargo__content {
+  display: grid;
+
+  grid-template-columns: minmax(0, 1.2fr) minmax(350px, 0.8fr);
+
+  gap: 60px;
+
+  align-items: start;
+}
+
+
+/* Cargo types */
+
+.air-freight-cargo__section-heading {
+  margin-bottom: 28px;
+}
+
+.air-freight-cargo__section-heading h3 {
+  margin: 0 0 8px;
+
+  font-size: 1.45rem;
+
+  color: #0f172a;
+}
+
+.air-freight-cargo__section-heading p {
+  max-width: 600px;
+
+  margin: 0;
+
+  font-size: 0.92rem;
+  line-height: 1.7;
+
+  color: #64748b;
+}
+
+.air-freight-cargo__grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 18px;
+}
+
+.air-freight-cargo__card {
+  padding: 24px;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+
+  background-color: #f8fafc;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.air-freight-cargo__card:hover {
+  transform: translateY(-3px);
+
+  border-color: #fed7aa;
+
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+}
+
+.air-freight-cargo__icon {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 18px;
+
+  border-radius: 10px;
+
+  background-color: #fff7ed;
+
+  font-size: 1.2rem;
+}
+
+.air-freight-cargo__card h4 {
+  margin: 0 0 8px;
+
+  font-size: 1rem;
+  line-height: 1.4;
+
+  color: #0f172a;
+}
+
+.air-freight-cargo__card p {
+  margin: 0;
+
+  font-size: 0.85rem;
+  line-height: 1.65;
+
+  color: #64748b;
+}
+
+
+/* Requirements panel */
+
+.air-freight-cargo__requirements {
+  position: sticky;
+  top: 30px;
+
+  padding: 32px;
+
+  border-radius: 18px;
+
+  background-color: #0f172a;
+
+  box-shadow: 0 15px 40px rgba(15, 23, 42, 0.12);
+}
+
+.air-freight-cargo__requirements-header {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  margin-bottom: 22px;
+}
+
+.air-freight-cargo__requirements-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 11px;
+
+  background-color: rgba(245, 158, 11, 0.12);
+
+  font-size: 1.25rem;
+}
+
+.air-freight-cargo__requirements-label {
+  display: block;
+
+  margin-bottom: 4px;
+
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+
+  color: #f59e0b;
+}
+
+.air-freight-cargo__requirements-header h3 {
+  margin: 0;
+
+  font-size: 1.35rem;
+
+  color: #ffffff;
+}
+
+.air-freight-cargo__requirements-intro {
+  margin: 0 0 22px;
+
+  font-size: 0.88rem;
+  line-height: 1.7;
+
+  color: #cbd5e1;
+}
+
+.air-freight-cargo__list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.air-freight-cargo__list li {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 12px;
+
+  font-size: 0.88rem;
+  line-height: 1.5;
+
+  color: #e2e8f0;
+}
+
+.air-freight-cargo__check {
+  width: 21px;
+  height: 21px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background-color: #f59e0b;
+
+  color: #0f172a;
+
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.air-freight-cargo__notice {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 10px;
+
+  margin-top: 28px;
+  padding: 16px;
+
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  border-radius: 10px;
+
+  background-color: rgba(245, 158, 11, 0.08);
+}
+
+.air-freight-cargo__notice > span {
+  flex-shrink: 0;
+
+  font-size: 1rem;
+}
+
+.air-freight-cargo__notice p {
+  margin: 0;
+
+  font-size: 0.78rem;
+  line-height: 1.6;
+
+  color: #cbd5e1;
+}
+
+
+/* Tablet */
+
+@media (max-width: 950px) {
+  .air-freight-cargo {
+    padding: 80px 20px;
+  }
+
+  .air-freight-cargo__header {
+    margin-bottom: 50px;
+  }
+
+  .air-freight-cargo__content {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+  .air-freight-cargo__requirements {
+    position: static;
+
+    max-width: 750px;
+  }
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .air-freight-cargo {
+    padding: 65px 16px;
+  }
+
+  .air-freight-cargo__header {
+    margin-bottom: 40px;
+  }
+
+  .air-freight-cargo__header h2 {
+    font-size: 1.9rem;
+  }
+
+  .air-freight-cargo__header p {
+    font-size: 0.92rem;
+    line-height: 1.75;
+  }
+
+  .air-freight-cargo__section-heading h3 {
+    font-size: 1.25rem;
+  }
+
+  .air-freight-cargo__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .air-freight-cargo__card {
+    padding: 22px;
+  }
+
+  .air-freight-cargo__requirements {
+    padding: 25px;
+  }
+
+  .air-freight-cargo__requirements-header h3 {
+    font-size: 1.2rem;
+  }
+
+  .air-freight-cargo__requirements-intro {
+    font-size: 0.85rem;
+  }
+
+  .air-freight-cargo__list li {
+    font-size: 0.84rem;
+  }
+
+  .air-freight-cargo__notice p {
+    font-size: 0.76rem;
+  }
+}

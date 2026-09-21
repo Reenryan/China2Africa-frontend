@@ -1,0 +1,259 @@
+.product-sourcing-audience {
+  padding: 100px 0;
+  background-color: #f5f8f6;
+}
+
+.product-sourcing-audience-container {
+  width: min(1180px, 92%);
+  margin: 0 auto;
+}
+
+/* Header */
+
+.product-sourcing-audience-header {
+  max-width: 760px;
+  margin-bottom: 55px;
+}
+
+.product-sourcing-audience-eyebrow {
+  display: inline-block;
+  margin-bottom: 18px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.7px;
+  color: #087a55;
+}
+
+.product-sourcing-audience-title {
+  margin-bottom: 22px;
+  font-size: clamp(38px, 4vw, 54px);
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+  font-weight: 800;
+  color: #142235;
+}
+
+.product-sourcing-audience-title span {
+  color: #087a55;
+}
+
+.product-sourcing-audience-intro {
+  max-width: 680px;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #68737f;
+}
+
+/* Audience cards */
+
+.product-sourcing-audience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.product-sourcing-audience-card {
+  position: relative;
+  min-height: 270px;
+  padding: 32px;
+  overflow: hidden;
+  background-color: #ffffff;
+  border: 1px solid #e1e6e3;
+  border-radius: 14px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.product-sourcing-audience-card:hover {
+  transform: translateY(-5px);
+  border-color: #cbd8d2;
+  box-shadow: 0 16px 35px rgba(20, 34, 53, 0.08);
+}
+
+.product-sourcing-audience-number {
+  position: absolute;
+  top: 25px;
+  right: 28px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #b8c5bf;
+}
+
+.product-sourcing-audience-icon {
+  width: 52px;
+  height: 52px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background-color: #edf6f1;
+  font-size: 25px;
+}
+
+.product-sourcing-audience-card h3 {
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 1.3;
+  font-weight: 800;
+  color: #142235;
+}
+
+.product-sourcing-audience-card p {
+  max-width: 480px;
+  font-size: 14px;
+  line-height: 1.75;
+  color: #697581;
+}
+
+/* Bottom callout */
+
+.product-sourcing-audience-bottom {
+  margin-top: 45px;
+  padding: 28px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  border-radius: 12px;
+  background-color: #142235;
+}
+
+.product-sourcing-audience-bottom h3 {
+  margin-bottom: 7px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.product-sourcing-audience-bottom p {
+  max-width: 680px;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #c5ced6;
+}
+
+.product-sourcing-audience-arrow {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #087a55;
+  color: #ffffff;
+  font-size: 23px;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .product-sourcing-audience {
+    padding: 80px 0;
+  }
+
+  .product-sourcing-audience-grid {
+    gap: 20px;
+  }
+
+  .product-sourcing-audience-card {
+    padding: 28px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+  .product-sourcing-audience-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .product-sourcing-audience-card {
+    min-height: auto;
+    padding: 28px 25px;
+  }
+
+  .product-sourcing-audience-bottom {
+    align-items: flex-start;
+  }
+}
+
+/* Small mobile */
+
+@media (max-width: 500px) {
+  .product-sourcing-audience {
+    padding: 65px 0;
+  }
+
+  .product-sourcing-audience-header {
+    margin-bottom: 38px;
+  }
+
+  .product-sourcing-audience-eyebrow {
+    margin-bottom: 14px;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+  }
+
+  .product-sourcing-audience-title {
+    margin-bottom: 18px;
+    font-size: 34px;
+    line-height: 1.12;
+    letter-spacing: -1px;
+  }
+
+  .product-sourcing-audience-intro {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .product-sourcing-audience-card {
+    padding: 24px 20px;
+  }
+
+  .product-sourcing-audience-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+
+  .product-sourcing-audience-card h3 {
+    font-size: 18px;
+  }
+
+  .product-sourcing-audience-card p {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .product-sourcing-audience-bottom {
+    margin-top: 35px;
+    padding: 24px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product-sourcing-audience-bottom h3 {
+    font-size: 17px;
+  }
+
+  .product-sourcing-audience-bottom p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 360px) {
+  .product-sourcing-audience-container {
+    width: 94%;
+  }
+
+  .product-sourcing-audience-title {
+    font-size: 31px;
+  }
+}

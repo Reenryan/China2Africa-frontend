@@ -1,0 +1,233 @@
+.consolidation-cta {
+  position: relative;
+
+  padding: 110px 0;
+
+  background-color: #087a55;
+
+  overflow: hidden;
+}
+
+.consolidation-cta::before {
+  content: "";
+
+  position: absolute;
+
+  width: 420px;
+  height: 420px;
+
+  top: -220px;
+  left: -180px;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  border-radius: 50%;
+}
+
+.consolidation-cta::after {
+  content: "";
+
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  right: -250px;
+  bottom: -280px;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  border-radius: 50%;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.consolidation-cta-container {
+  position: relative;
+  z-index: 1;
+
+  width: min(850px, 90%);
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+/* =========================
+   ROUTE
+========================= */
+
+.consolidation-cta-route {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 28px;
+
+  padding: 9px 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 30px;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  color: #ffffff;
+}
+
+.consolidation-cta-route span:nth-child(2) {
+  font-size: 17px;
+  color: #bcebd7;
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.consolidation-cta-eyebrow {
+  display: block;
+
+  margin-bottom: 18px;
+
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  color: #bcebd7;
+}
+
+.consolidation-cta-title {
+  margin: 0 0 24px;
+
+  font-size: clamp(40px, 5vw, 58px);
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+
+  color: #ffffff;
+}
+
+.consolidation-cta-description {
+  max-width: 650px;
+
+  margin: 0 auto 32px;
+
+  font-size: 17px;
+  line-height: 1.7;
+
+  color: rgba(255, 255, 255, 0.82);
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.consolidation-cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  min-height: 54px;
+
+  padding: 0 28px;
+
+  background-color: #ffffff;
+
+  border-radius: 8px;
+
+  color: #087a55;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.consolidation-cta-button:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
+}
+
+.consolidation-cta-button span {
+  font-size: 20px;
+}
+
+/* =========================
+   NOTE
+========================= */
+
+.consolidation-cta-note {
+  margin: 18px 0 0;
+
+  font-size: 13px;
+
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 800px) {
+  .consolidation-cta {
+    padding: 85px 0;
+  }
+
+  .consolidation-cta-title {
+    font-size: 44px;
+  }
+
+  .consolidation-cta-description {
+    font-size: 16px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  .consolidation-cta {
+    padding: 70px 0;
+  }
+
+  .consolidation-cta-container {
+    width: min(92%, 850px);
+  }
+
+  .consolidation-cta-route {
+    margin-bottom: 24px;
+
+    font-size: 9px;
+  }
+
+  .consolidation-cta-title {
+    font-size: 37px;
+    letter-spacing: -1px;
+  }
+
+  .consolidation-cta-description {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .consolidation-cta-button {
+    width: 100%;
+
+    padding: 0 20px;
+  }
+
+  .consolidation-cta-note {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}

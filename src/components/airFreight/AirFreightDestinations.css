@@ -1,0 +1,423 @@
+.air-freight-destinations {
+  width: 100%;
+  padding: 100px 20px;
+
+  background-color: #f8fafc;
+}
+
+.air-freight-destinations__container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.air-freight-destinations__header {
+  max-width: 750px;
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+.air-freight-destinations__eyebrow {
+  display: inline-block;
+
+  margin-bottom: 16px;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  color: #d97706;
+}
+
+.air-freight-destinations__header h2 {
+  margin: 0 0 20px;
+
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.2;
+
+  color: #0f172a;
+}
+
+.air-freight-destinations__header h2 span {
+  display: block;
+
+  color: #d97706;
+}
+
+.air-freight-destinations__header p {
+  margin: 0;
+
+  font-size: 1rem;
+  line-height: 1.8;
+
+  color: #64748b;
+}
+
+
+/* Route */
+
+.air-freight-destinations__route {
+  max-width: 800px;
+
+  display: grid;
+  grid-template-columns: 1fr 120px 1fr;
+
+  align-items: center;
+
+  margin: 0 auto 55px;
+  padding: 22px 28px;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+
+  background-color: #ffffff;
+
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.04);
+}
+
+.air-freight-destinations__route-point {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+}
+
+.air-freight-destinations__route-point:last-child {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.air-freight-destinations__route-icon {
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background-color: #fff7ed;
+
+  font-size: 1.25rem;
+}
+
+.air-freight-destinations__route-point div span {
+  display: block;
+
+  margin-bottom: 3px;
+
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+
+  color: #94a3b8;
+}
+
+.air-freight-destinations__route-point h3 {
+  margin: 0;
+
+  font-size: 1.05rem;
+
+  color: #0f172a;
+}
+
+.air-freight-destinations__route-line {
+  position: relative;
+
+  height: 2px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #fed7aa;
+}
+
+.air-freight-destinations__route-line span {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid #fed7aa;
+  border-radius: 50%;
+
+  background-color: #ffffff;
+
+  font-size: 1rem;
+}
+
+
+/* Destination cards */
+
+.air-freight-destinations__grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 25px;
+}
+
+.air-freight-destinations__card {
+  padding: 30px;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 17px;
+
+  background-color: #ffffff;
+
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.air-freight-destinations__card:hover {
+  transform: translateY(-4px);
+
+  border-color: #fed7aa;
+
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+}
+
+.air-freight-destinations__card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+}
+
+.air-freight-destinations__country {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  font-size: 0.9rem;
+  font-weight: 700;
+
+  color: #0f172a;
+}
+
+.air-freight-destinations__country-icon {
+  font-size: 1.5rem;
+}
+
+.air-freight-destinations__code {
+  padding: 5px 9px;
+
+  border-radius: 6px;
+
+  background-color: #f1f5f9;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  color: #64748b;
+}
+
+.air-freight-destinations__divider {
+  width: 100%;
+  height: 1px;
+
+  margin: 22px 0;
+  
+  background-color: #e2e8f0;
+}
+
+.air-freight-destinations__label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+
+  color: #d97706;
+}
+
+.air-freight-destinations__card h3 {
+  margin: 0 0 12px;
+
+  font-size: 1.25rem;
+  line-height: 1.4;
+
+  color: #0f172a;
+}
+
+.air-freight-destinations__card p {
+  margin: 0 0 20px;
+
+  font-size: 0.88rem;
+  line-height: 1.7;
+
+  color: #64748b;
+}
+
+.air-freight-destinations__card ul {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.air-freight-destinations__card li {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 10px;
+
+  font-size: 0.84rem;
+  line-height: 1.5;
+
+  color: #475569;
+}
+
+.air-freight-destinations__card li span {
+  color: #d97706;
+
+  font-weight: 800;
+}
+
+
+/* Bottom note */
+
+.air-freight-destinations__note {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 12px;
+
+  max-width: 900px;
+
+  margin: 35px auto 0;
+  padding: 20px 22px;
+
+  border-left: 4px solid #f59e0b;
+  border-radius: 8px;
+
+  background-color: #fff7ed;
+}
+
+.air-freight-destinations__note > span {
+  flex-shrink: 0;
+
+  font-size: 1.1rem;
+}
+
+.air-freight-destinations__note p {
+  margin: 0;
+
+  font-size: 0.86rem;
+  line-height: 1.7;
+
+  color: #475569;
+}
+
+.air-freight-destinations__note strong {
+  color: #0f172a;
+}
+
+
+/* Tablet */
+
+@media (max-width: 850px) {
+  .air-freight-destinations {
+    padding: 80px 20px;
+  }
+
+  .air-freight-destinations__route {
+    grid-template-columns: 1fr 80px 1fr;
+  }
+
+  .air-freight-destinations__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .air-freight-destinations {
+    padding: 65px 16px;
+  }
+
+  .air-freight-destinations__header {
+    margin-bottom: 40px;
+  }
+
+  .air-freight-destinations__header h2 {
+    font-size: 1.9rem;
+  }
+
+  .air-freight-destinations__header p {
+    font-size: 0.92rem;
+    line-height: 1.75;
+  }
+
+  .air-freight-destinations__route {
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+
+    padding: 22px;
+  }
+
+  .air-freight-destinations__route-point:last-child {
+    justify-content: flex-start;
+
+    text-align: left;
+  }
+
+  .air-freight-destinations__route-line {
+    width: 2px;
+    height: 35px;
+
+    margin-left: 22px;
+  }
+
+  .air-freight-destinations__route-line span {
+    width: 34px;
+    height: 34px;
+
+    transform: rotate(90deg);
+
+    font-size: 0.85rem;
+  }
+
+  .air-freight-destinations__card {
+    padding: 24px;
+  }
+
+  .air-freight-destinations__card h3 {
+    font-size: 1.1rem;
+  }
+
+  .air-freight-destinations__card p {
+    font-size: 0.85rem;
+  }
+
+  .air-freight-destinations__note {
+    padding: 18px;
+  }
+
+  .air-freight-destinations__note p {
+    font-size: 0.82rem;
+  }
+}

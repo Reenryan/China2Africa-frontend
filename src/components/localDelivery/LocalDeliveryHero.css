@@ -1,0 +1,174 @@
+.local-delivery-hero {
+  position: relative;
+
+  min-height: 650px;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(15, 23, 42, 0.94) 0%,
+      rgba(15, 23, 42, 0.82) 45%,
+      rgba(15, 23, 42, 0.55) 100%
+    ),
+    url("/images/local-delivery-hero.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  color: #ffffff;
+}
+
+.local-delivery-hero__container {
+  width: min(1150px, 92%);
+
+  margin: 0 auto;
+}
+
+.local-delivery-hero__content {
+  max-width: 720px;
+}
+
+.local-delivery-hero__eyebrow {
+  display: inline-block;
+
+  margin-bottom: 1.2rem;
+
+  color: #f59e0b;
+
+  font-size: 0.82rem;
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+}
+
+.local-delivery-hero h1 {
+  margin: 0;
+
+  font-size: clamp(2.7rem, 6vw, 4.5rem);
+
+  line-height: 1.08;
+
+  letter-spacing: -1.5px;
+}
+
+.local-delivery-hero h1 span {
+  display: block;
+
+  color: #f59e0b;
+}
+
+.local-delivery-hero p {
+  max-width: 650px;
+
+  margin: 1.5rem 0 0;
+
+  color: #e2e8f0;
+
+  font-size: 1.08rem;
+
+  line-height: 1.8;
+}
+
+.local-delivery-hero__actions {
+  display: flex;
+
+  gap: 1rem;
+
+  margin-top: 2rem;
+}
+
+.local-delivery-hero__primary {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.9rem 1.4rem;
+
+  border-radius: 8px;
+
+  background: #f59e0b;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-weight: 700;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.local-delivery-hero__primary:hover {
+  background: #d97706;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+
+  .local-delivery-hero {
+    min-height: 580px;
+
+    background-position: center;
+  }
+
+  .local-delivery-hero__content {
+    max-width: 620px;
+  }
+
+  .local-delivery-hero h1 {
+    font-size: clamp(2.4rem, 8vw, 3.6rem);
+  }
+
+  .local-delivery-hero p {
+    font-size: 1rem;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+  .local-delivery-hero {
+    min-height: 560px;
+  }
+
+  .local-delivery-hero__container {
+    width: 90%;
+  }
+
+  .local-delivery-hero__eyebrow {
+    font-size: 0.72rem;
+  }
+
+  .local-delivery-hero h1 {
+    font-size: 2.35rem;
+  }
+
+  .local-delivery-hero p {
+    font-size: 0.95rem;
+
+    line-height: 1.7;
+  }
+
+  .local-delivery-hero__actions {
+    margin-top: 1.6rem;
+  }
+
+  .local-delivery-hero__primary {
+    width: 100%;
+  }
+}

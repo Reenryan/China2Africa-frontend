@@ -1,0 +1,261 @@
+.consolidation-process {
+  padding: 105px 0;
+
+  background-color: #142235;
+}
+
+.consolidation-process-container {
+  width: min(1180px, 90%);
+  margin: 0 auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.consolidation-process-header {
+  max-width: 760px;
+
+  margin: 0 auto 75px;
+
+  text-align: center;
+}
+
+.consolidation-process-eyebrow {
+  display: inline-block;
+
+  margin-bottom: 18px;
+
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  color: #5bc49a;
+}
+
+.consolidation-process-title {
+  margin: 0 0 22px;
+
+  font-size: clamp(38px, 4vw, 52px);
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+
+  color: #ffffff;
+}
+
+.consolidation-process-title span {
+  color: #5bc49a;
+}
+
+.consolidation-process-intro {
+  max-width: 650px;
+
+  margin: 0 auto;
+
+  font-size: 17px;
+  line-height: 1.7;
+
+  color: #b8c2ce;
+}
+
+/* =========================
+   PROCESS STEPS
+========================= */
+
+.consolidation-process-steps {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 0;
+}
+
+.consolidation-process-step {
+  position: relative;
+
+  padding: 0 28px;
+}
+
+.consolidation-process-step:first-child {
+  padding-left: 0;
+}
+
+.consolidation-process-step:last-child {
+  padding-right: 0;
+}
+
+/* =========================
+   NUMBER
+========================= */
+
+.consolidation-process-number {
+  position: relative;
+  z-index: 2;
+
+  width: 62px;
+  height: 62px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 30px;
+
+  border: 1px solid rgba(91, 196, 154, 0.45);
+  border-radius: 50%;
+
+  background-color: #142235;
+
+  color: #5bc49a;
+
+  font-size: 15px;
+  font-weight: 800;
+}
+
+/* =========================
+   CONNECTOR
+========================= */
+
+.consolidation-process-connector {
+  position: absolute;
+
+  top: 31px;
+  left: 90px;
+
+  width: calc(100% - 60px);
+
+  height: 1px;
+
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.consolidation-process-connector span {
+  display: block;
+
+  width: 8px;
+  height: 8px;
+
+  position: absolute;
+  right: 0;
+  top: -4px;
+
+  border-top: 1px solid #5bc49a;
+  border-right: 1px solid #5bc49a;
+
+  transform: rotate(45deg);
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.consolidation-process-content {
+  max-width: 250px;
+}
+
+.consolidation-process-content h3 {
+  margin: 0 0 13px;
+
+  font-size: 19px;
+  line-height: 1.35;
+
+  color: #ffffff;
+}
+
+.consolidation-process-content p {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 1.7;
+
+  color: #aeb9c6;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+  .consolidation-process {
+    padding: 85px 0;
+  }
+
+  .consolidation-process-header {
+    margin-bottom: 55px;
+  }
+
+  .consolidation-process-steps {
+    grid-template-columns: repeat(2, 1fr);
+
+    row-gap: 55px;
+  }
+
+  .consolidation-process-step {
+    padding: 0 20px;
+  }
+
+  .consolidation-process-step:first-child {
+    padding-left: 0;
+  }
+
+  .consolidation-process-step:last-child {
+    padding-right: 20px;
+  }
+
+  .consolidation-process-connector {
+    display: none;
+  }
+
+  .consolidation-process-content {
+    max-width: 350px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  .consolidation-process {
+    padding: 70px 0;
+  }
+
+  .consolidation-process-container {
+    width: min(92%, 1180px);
+  }
+
+  .consolidation-process-title {
+    font-size: 38px;
+  }
+
+  .consolidation-process-intro {
+    font-size: 16px;
+  }
+
+  .consolidation-process-steps {
+    grid-template-columns: 1fr;
+
+    row-gap: 42px;
+  }
+
+  .consolidation-process-step,
+  .consolidation-process-step:first-child,
+  .consolidation-process-step:last-child {
+    padding: 0;
+  }
+
+  .consolidation-process-number {
+    width: 54px;
+    height: 54px;
+
+    margin-bottom: 20px;
+  }
+
+  .consolidation-process-content {
+    max-width: 100%;
+  }
+
+  .consolidation-process-content h3 {
+    font-size: 18px;
+  }
+}

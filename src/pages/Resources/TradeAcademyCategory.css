@@ -1,0 +1,431 @@
+.trade-academy-category {
+  padding: 110px 20px 80px;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+.trade-academy-category__container {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+/* =========================
+   BREADCRUMB
+========================= */
+
+.trade-academy-category__breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.trade-academy-category__breadcrumb a {
+  color: #d97706;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.trade-academy-category__breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.trade-academy-category__hero {
+  position: relative;
+  overflow: hidden;
+  padding: 70px 60px;
+  border-radius: 24px;
+  background:
+    linear-gradient(
+      135deg,
+      #0f172a 0%,
+      #172554 100%
+    );
+  margin-bottom: 70px;
+}
+
+.trade-academy-category__hero::after {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: rgba(245, 158, 11, 0.1);
+  right: -80px;
+  top: -100px;
+}
+
+.trade-academy-category__hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 750px;
+}
+
+.trade-academy-category__icon {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: rgba(245, 158, 11, 0.15);
+  font-size: 2rem;
+  margin-bottom: 24px;
+}
+
+.trade-academy-category__eyebrow {
+  display: block;
+  margin-bottom: 12px;
+  color: #f59e0b;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.trade-academy-category__hero h1 {
+  margin: 0 0 18px;
+  color: #ffffff;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1.05;
+}
+
+.trade-academy-category__hero p {
+  max-width: 680px;
+  margin: 0;
+  color: #cbd5e1;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* =========================
+   ARTICLES HEADER
+========================= */
+
+.trade-academy-category__articles-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.trade-academy-category__articles-eyebrow {
+  display: block;
+  margin-bottom: 10px;
+  color: #d97706;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.trade-academy-category__articles-header h2 {
+  margin: 0;
+  color: #0f172a;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  line-height: 1.2;
+}
+
+.trade-academy-category__article-count {
+  flex-shrink: 0;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #475569;
+  font-size: 0.9rem;
+  font-weight: 700;
+  box-shadow: 0 5px 18px rgba(15, 23, 42, 0.06);
+}
+
+/* =========================
+   ARTICLE GRID
+========================= */
+
+.trade-academy-category__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* =========================
+   ARTICLE CARD
+========================= */
+
+.trade-academy-category__card {
+  overflow: hidden;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.07);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.trade-academy-category__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.12);
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.trade-academy-category__image-link {
+  display: block;
+  text-decoration: none;
+}
+
+.trade-academy-category__image-wrapper {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+  background: #e2e8f0;
+}
+
+.trade-academy-category__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.trade-academy-category__card:hover
+.trade-academy-category__image {
+  transform: scale(1.04);
+}
+
+.trade-academy-category__category-label {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  padding: 7px 11px;
+  border-radius: 999px;
+  background: #f59e0b;
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.trade-academy-category__content {
+  padding: 24px;
+}
+
+.trade-academy-category__meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  color: #94a3b8;
+  font-size: 0.78rem;
+}
+
+.trade-academy-category__content h3 {
+  margin: 0 0 12px;
+  line-height: 1.35;
+}
+
+.trade-academy-category__content h3 a {
+  color: #0f172a;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.trade-academy-category__content h3 a:hover {
+  color: #d97706;
+}
+
+.trade-academy-category__content > p {
+  margin: 0 0 20px;
+  color: #64748b;
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+.trade-academy-category__read-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #d97706;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.trade-academy-category__read-link span {
+  transition: transform 0.2s ease;
+}
+
+.trade-academy-category__read-link:hover span {
+  transform: translateX(4px);
+}
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.trade-academy-category__empty {
+  padding: 70px 30px;
+  border-radius: 18px;
+  background: #ffffff;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.06);
+}
+
+.trade-academy-category__empty-icon {
+  margin-bottom: 15px;
+  font-size: 2.5rem;
+}
+
+.trade-academy-category__empty h3 {
+  margin: 0 0 10px;
+  color: #0f172a;
+  font-size: 1.4rem;
+}
+
+.trade-academy-category__empty p {
+  margin: 0 0 20px;
+  color: #64748b;
+}
+
+.trade-academy-category__empty a {
+  color: #d97706;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* =========================
+   BOTTOM NAVIGATION
+========================= */
+
+.trade-academy-category__bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 50px;
+  padding-top: 28px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.trade-academy-category__bottom a {
+  color: #475569;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.trade-academy-category__bottom a:hover {
+  color: #d97706;
+}
+
+/* =========================
+   NOT FOUND
+========================= */
+
+.trade-academy-category__not-found {
+  min-height: 65vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.trade-academy-category__not-found-icon {
+  margin-bottom: 18px;
+  font-size: 3rem;
+}
+
+.trade-academy-category__not-found span {
+  margin-bottom: 10px;
+  color: #d97706;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.trade-academy-category__not-found h1 {
+  margin: 0 0 12px;
+  color: #0f172a;
+  font-size: 2.5rem;
+}
+
+.trade-academy-category__not-found p {
+  margin: 0 0 25px;
+  color: #64748b;
+}
+
+.trade-academy-category__back-button {
+  padding: 12px 20px;
+  border-radius: 10px;
+  background: #f59e0b;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1050px) {
+  .trade-academy-category__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .trade-academy-category {
+    padding: 90px 16px 60px;
+  }
+
+  .trade-academy-category__hero {
+    padding: 45px 25px;
+    border-radius: 18px;
+  }
+
+  .trade-academy-category__articles-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .trade-academy-category__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trade-academy-category__bottom {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .trade-academy-category__breadcrumb {
+    font-size: 0.8rem;
+  }
+
+  .trade-academy-category__hero {
+    padding: 35px 20px;
+  }
+
+  .trade-academy-category__hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .trade-academy-category__content {
+    padding: 20px;
+  }
+
+  .trade-academy-category__image-wrapper {
+    height: 200px;
+  }
+}

@@ -1,0 +1,214 @@
+.local-delivery-benefits {
+  padding: 6rem 0;
+
+  background: #ffffff;
+}
+
+.local-delivery-benefits__container {
+  width: min(1150px, 92%);
+
+  margin: 0 auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.local-delivery-benefits__header {
+  max-width: 760px;
+
+  margin: 0 auto 3.5rem;
+
+  text-align: center;
+}
+
+.local-delivery-benefits__eyebrow {
+  display: inline-block;
+
+  margin-bottom: 1rem;
+
+  color: #d97706;
+
+  font-size: 0.78rem;
+  font-weight: 800;
+
+  letter-spacing: 1.4px;
+}
+
+.local-delivery-benefits__header h2 {
+  margin: 0;
+
+  color: #0f172a;
+
+  font-size: clamp(2rem, 4vw, 3rem);
+
+  line-height: 1.15;
+
+  letter-spacing: -1px;
+}
+
+.local-delivery-benefits__header h2 span {
+  display: block;
+
+  color: #d97706;
+}
+
+.local-delivery-benefits__header p {
+  max-width: 680px;
+
+  margin: 1.3rem auto 0;
+
+  color: #64748b;
+
+  font-size: 1rem;
+
+  line-height: 1.8;
+}
+
+
+/* =========================
+   BENEFITS GRID
+========================= */
+
+.local-delivery-benefits__grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 1.5rem;
+}
+
+
+/* =========================
+   BENEFIT CARD
+========================= */
+
+.local-delivery-benefits__card {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 1rem;
+
+  padding: 1.6rem;
+
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 14px;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.local-delivery-benefits__card:hover {
+  transform: translateY(-3px);
+
+  border-color: #cbd5e1;
+
+  box-shadow:
+    0 12px 25px rgba(15, 23, 42, 0.06);
+}
+
+
+/* =========================
+   ICON
+========================= */
+
+.local-delivery-benefits__icon {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  background: #fff7ed;
+
+  border-radius: 10px;
+
+  font-size: 1.35rem;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.local-delivery-benefits__content h3 {
+  margin: 0 0 0.5rem;
+
+  color: #0f172a;
+
+  font-size: 1rem;
+
+  line-height: 1.4;
+}
+
+.local-delivery-benefits__content p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 0.88rem;
+
+  line-height: 1.65;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .local-delivery-benefits {
+    padding: 5rem 0;
+  }
+
+  .local-delivery-benefits__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .local-delivery-benefits {
+    padding: 4rem 0;
+  }
+
+  .local-delivery-benefits__container {
+    width: 90%;
+  }
+
+  .local-delivery-benefits__grid {
+    grid-template-columns: 1fr;
+
+    gap: 1rem;
+  }
+
+  .local-delivery-benefits__card {
+    padding: 1.4rem;
+  }
+
+  .local-delivery-benefits__icon {
+    width: 44px;
+    height: 44px;
+
+    font-size: 1.2rem;
+  }
+
+}

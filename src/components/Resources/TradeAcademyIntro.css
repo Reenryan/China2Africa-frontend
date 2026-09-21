@@ -1,0 +1,240 @@
+.trade-academy-intro {
+  padding: 6rem 1.5rem;
+  background: #ffffff;
+}
+
+.trade-academy-intro__container {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(380px, 0.85fr);
+  gap: 5rem;
+  align-items: center;
+}
+
+/* ================================
+   LEFT CONTENT
+================================ */
+
+.trade-academy-intro__content {
+  max-width: 650px;
+}
+
+.trade-academy-intro__eyebrow {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #d97706;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.trade-academy-intro__content h2 {
+  margin: 0 0 1.5rem;
+  color: #0f172a;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.15;
+  font-weight: 800;
+}
+
+.trade-academy-intro__content h2 span {
+  display: block;
+  color: #d97706;
+}
+
+.trade-academy-intro__content > p {
+  margin: 0 0 1.1rem;
+  color: #64748b;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* ================================
+   HIGHLIGHT
+================================ */
+
+.trade-academy-intro__highlight {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 1.25rem;
+  border-left: 4px solid #f59e0b;
+  border-radius: 0 12px 12px 0;
+  background: #fff7ed;
+}
+
+.trade-academy-intro__highlight-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #ffffff;
+  font-size: 1.3rem;
+}
+
+.trade-academy-intro__highlight strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: #0f172a;
+  font-size: 0.95rem;
+}
+
+.trade-academy-intro__highlight p {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.87rem;
+  line-height: 1.6;
+}
+
+/* ================================
+   LEARNING PANEL
+================================ */
+
+.trade-academy-intro__learning {
+  padding: 2rem;
+  border-radius: 18px;
+  background: #0f172a;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+}
+
+.trade-academy-intro__learning-header {
+  margin-bottom: 1.75rem;
+}
+
+.trade-academy-intro__learning-header > span {
+  display: block;
+  margin-bottom: 0.6rem;
+  color: #f59e0b;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.trade-academy-intro__learning-header h3 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.7rem;
+  line-height: 1.25;
+}
+
+.trade-academy-intro__learning-header h3 span {
+  display: block;
+  color: #f59e0b;
+}
+
+/* ================================
+   LEARNING POINTS
+================================ */
+
+.trade-academy-intro__points {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.trade-academy-intro__point {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.045);
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.trade-academy-intro__point:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateX(4px);
+}
+
+.trade-academy-intro__point-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: rgba(245, 158, 11, 0.12);
+  font-size: 1.2rem;
+}
+
+.trade-academy-intro__point-content h4 {
+  margin: 0 0 0.35rem;
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+.trade-academy-intro__point-content p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 0.82rem;
+  line-height: 1.65;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 950px) {
+  .trade-academy-intro {
+    padding: 5rem 1.25rem;
+  }
+
+  .trade-academy-intro__container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .trade-academy-intro__content {
+    max-width: 800px;
+  }
+
+  .trade-academy-intro__learning {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 600px) {
+  .trade-academy-intro {
+    padding: 4.5rem 1rem;
+  }
+
+  .trade-academy-intro__content h2 {
+    font-size: 2.1rem;
+  }
+
+  .trade-academy-intro__learning {
+    padding: 1.5rem;
+  }
+
+  .trade-academy-intro__learning-header h3 {
+    font-size: 1.45rem;
+  }
+
+  .trade-academy-intro__point {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .trade-academy-intro__highlight {
+    flex-direction: column;
+  }
+
+  .trade-academy-intro__point {
+    flex-direction: column;
+  }
+
+  .trade-academy-intro__content h2 {
+    font-size: 1.9rem;
+  }
+}

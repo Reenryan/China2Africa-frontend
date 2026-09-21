@@ -1,0 +1,178 @@
+.air-freight-cta {
+  width: 100%;
+  padding: 110px 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #0f172a 0%,
+      #172033 55%,
+      #1e293b 100%
+    );
+}
+
+.air-freight-cta__container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.air-freight-cta__content {
+  text-align: center;
+}
+
+.air-freight-cta__eyebrow {
+  display: inline-block;
+
+  margin-bottom: 18px;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  color: #f59e0b;
+}
+
+.air-freight-cta__content h2 {
+  margin: 0 0 22px;
+
+  font-size: clamp(2.3rem, 5vw, 3.7rem);
+  line-height: 1.15;
+  letter-spacing: -0.8px;
+
+  color: #ffffff;
+}
+
+.air-freight-cta__content h2 span {
+  display: block;
+
+  color: #f59e0b;
+}
+
+.air-freight-cta__content > p {
+  max-width: 680px;
+
+  margin: 0 auto;
+
+  font-size: 1rem;
+  line-height: 1.8;
+
+  color: #cbd5e1;
+}
+
+.air-freight-cta__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+
+  margin-top: 35px;
+}
+
+.air-freight-cta__primary,
+.air-freight-cta__secondary {
+  min-height: 52px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 28px;
+
+  border-radius: 8px;
+
+  font-size: 0.92rem;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.air-freight-cta__primary {
+  background-color: #f59e0b;
+
+  color: #ffffff;
+}
+
+.air-freight-cta__primary:hover {
+  background-color: #d97706;
+
+  transform: translateY(-2px);
+}
+
+.air-freight-cta__secondary {
+  border: 1px solid #475569;
+
+  background-color: transparent;
+
+  color: #ffffff;
+}
+
+.air-freight-cta__secondary:hover {
+  border-color: #94a3b8;
+
+  background-color: rgba(255, 255, 255, 0.05);
+
+  transform: translateY(-2px);
+}
+
+.air-freight-cta__note {
+  margin-top: 22px !important;
+
+  font-size: 0.8rem !important;
+
+  color: #94a3b8 !important;
+}
+
+
+/* Tablet */
+
+@media (max-width: 768px) {
+  .air-freight-cta {
+    padding: 85px 20px;
+  }
+
+  .air-freight-cta__content h2 {
+    font-size: 2.8rem;
+  }
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .air-freight-cta {
+    padding: 70px 16px;
+  }
+
+  .air-freight-cta__content h2 {
+    font-size: 2.2rem;
+  }
+
+  .air-freight-cta__content > p {
+    font-size: 0.92rem;
+    line-height: 1.75;
+  }
+
+  .air-freight-cta__actions {
+    flex-direction: column;
+
+    width: 100%;
+
+    margin-top: 28px;
+  }
+
+  .air-freight-cta__primary,
+  .air-freight-cta__secondary {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .air-freight-cta__note {
+    font-size: 0.78rem !important;
+  }
+}

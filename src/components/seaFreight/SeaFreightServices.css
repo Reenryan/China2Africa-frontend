@@ -1,0 +1,169 @@
+.sea-freight-services {
+  width: 100%;
+  padding: 100px 20px;
+  background-color: #f8fafc;
+}
+
+.sea-freight-services__container {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.sea-freight-services__header {
+  max-width: 720px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.sea-freight-services__eyebrow {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #d97706;
+}
+
+.sea-freight-services__header h2 {
+  margin: 0 0 20px;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.2;
+  color: #0f172a;
+}
+
+.sea-freight-services__header h2 span {
+  color: #d97706;
+}
+
+.sea-freight-services__header p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #64748b;
+}
+
+/* GRID */
+
+.sea-freight-services__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+/* CARD */
+
+.sea-freight-services__card {
+  min-height: 240px;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+
+  background-color: #ffffff;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.sea-freight-services__card:hover {
+  transform: translateY(-5px);
+  border-color: #fed7aa;
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+}
+
+/* ICON */
+
+.sea-freight-services__icon {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 22px;
+
+  border-radius: 12px;
+  background-color: #fff7ed;
+
+  font-size: 1.5rem;
+}
+
+/* CONTENT */
+
+.sea-freight-services__content h3 {
+  margin: 0 0 12px;
+
+  font-size: 1.15rem;
+  line-height: 1.4;
+
+  color: #0f172a;
+}
+
+.sea-freight-services__content p {
+  margin: 0;
+
+  font-size: 0.92rem;
+  line-height: 1.7;
+
+  color: #64748b;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .sea-freight-services {
+    padding: 80px 20px;
+  }
+
+  .sea-freight-services__header {
+    margin-bottom: 50px;
+  }
+
+  .sea-freight-services__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .sea-freight-services {
+    padding: 65px 16px;
+  }
+
+  .sea-freight-services__header {
+    margin-bottom: 40px;
+  }
+
+  .sea-freight-services__header h2 {
+    font-size: 1.9rem;
+  }
+
+  .sea-freight-services__header p {
+    font-size: 0.92rem;
+    line-height: 1.7;
+  }
+
+  .sea-freight-services__grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .sea-freight-services__card {
+    min-height: auto;
+    padding: 25px;
+  }
+
+  .sea-freight-services__content p {
+    font-size: 0.88rem;
+  }
+}

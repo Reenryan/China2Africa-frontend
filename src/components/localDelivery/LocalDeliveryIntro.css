@@ -1,0 +1,284 @@
+.local-delivery-intro {
+  padding: 6rem 0;
+
+  background: #ffffff;
+}
+
+.local-delivery-intro__container {
+  width: min(1150px, 92%);
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 4rem;
+
+  align-items: center;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.local-delivery-intro__content {
+  max-width: 580px;
+}
+
+.local-delivery-intro__eyebrow {
+  display: inline-block;
+
+  margin-bottom: 1rem;
+
+  color: #d97706;
+
+  font-size: 0.78rem;
+  font-weight: 800;
+
+  letter-spacing: 1.4px;
+}
+
+.local-delivery-intro__content h2 {
+  margin: 0;
+
+  color: #0f172a;
+
+  font-size: clamp(2rem, 4vw, 3rem);
+
+  line-height: 1.15;
+
+  letter-spacing: -1px;
+}
+
+.local-delivery-intro__content h2 span {
+  display: block;
+
+  color: #d97706;
+}
+
+.local-delivery-intro__content p {
+  margin: 1.3rem 0 0;
+
+  color: #64748b;
+
+  font-size: 1rem;
+
+  line-height: 1.8;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.local-delivery-intro__card {
+  padding: 2rem;
+
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 12px 30px rgba(15, 23, 42, 0.06);
+}
+
+
+/* =========================
+   CARD HEADER
+========================= */
+
+.local-delivery-intro__card-header {
+  display: flex;
+
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.local-delivery-intro__card-icon {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  background: #fff7ed;
+
+  border-radius: 12px;
+
+  font-size: 1.7rem;
+}
+
+.local-delivery-intro__card-label {
+  display: block;
+
+  margin-bottom: 0.3rem;
+
+  color: #64748b;
+
+  font-size: 0.72rem;
+  font-weight: 800;
+
+  letter-spacing: 1.2px;
+}
+
+.local-delivery-intro__card-header h3 {
+  margin: 0;
+
+  color: #0f172a;
+
+  font-size: 1.35rem;
+}
+
+.local-delivery-intro__card-header h3 span {
+  color: #f59e0b;
+
+  margin: 0 0.2rem;
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.local-delivery-intro__divider {
+  height: 1px;
+
+  margin: 1.5rem 0;
+
+  background: #e2e8f0;
+}
+
+
+/* =========================
+   DETAILS
+========================= */
+
+.local-delivery-intro__details {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 1.4rem;
+}
+
+.local-delivery-intro__detail {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 1rem;
+}
+
+.local-delivery-intro__detail-icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 10px;
+
+  font-size: 1.1rem;
+}
+
+.local-delivery-intro__detail h4 {
+  margin: 0 0 0.35rem;
+
+  color: #0f172a;
+
+  font-size: 0.98rem;
+}
+
+.local-delivery-intro__detail p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 0.88rem;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .local-delivery-intro {
+    padding: 5rem 0;
+  }
+
+  .local-delivery-intro__container {
+    grid-template-columns: 1fr;
+
+    gap: 3rem;
+  }
+
+  .local-delivery-intro__content {
+    max-width: 700px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+  .local-delivery-intro {
+    padding: 4rem 0;
+  }
+
+  .local-delivery-intro__container {
+    width: 90%;
+  }
+
+  .local-delivery-intro__card {
+    padding: 1.4rem;
+  }
+
+  .local-delivery-intro__card-header {
+    align-items: flex-start;
+  }
+
+  .local-delivery-intro__card-icon {
+    width: 50px;
+    height: 50px;
+
+    font-size: 1.4rem;
+  }
+
+  .local-delivery-intro__card-header h3 {
+    font-size: 1.15rem;
+  }
+
+  .local-delivery-intro__detail {
+    gap: 0.75rem;
+  }
+
+  .local-delivery-intro__detail-icon {
+    width: 38px;
+    height: 38px;
+  }
+
+}

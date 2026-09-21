@@ -1,0 +1,228 @@
+.business-procurement-process {
+  width: 100%;
+  padding: 100px 20px;
+  background-color: #f8fafc;
+}
+
+.business-procurement-process__container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.business-procurement-process__header {
+  max-width: 720px;
+  margin: 0 auto 70px;
+  text-align: center;
+}
+
+.business-procurement-process__eyebrow {
+  display: inline-block;
+  margin-bottom: 15px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #d97706;
+}
+
+.business-procurement-process__header h2 {
+  margin: 0 0 20px;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.2;
+  color: #0f172a;
+}
+
+.business-procurement-process__header h2 span {
+  color: #d97706;
+}
+
+.business-procurement-process__header p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #64748b;
+}
+
+/* =========================
+   TIMELINE
+========================= */
+
+.business-procurement-process__timeline {
+  position: relative;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.business-procurement-process__step {
+  position: relative;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  column-gap: 30px;
+  min-height: 150px;
+}
+
+.business-procurement-process__number {
+  position: relative;
+  z-index: 2;
+
+  width: 64px;
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background-color: #ffffff;
+  border: 2px solid #d97706;
+
+  color: #d97706;
+  font-size: 0.9rem;
+  font-weight: 700;
+
+  box-shadow: 0 5px 20px rgba(15, 23, 42, 0.08);
+}
+
+.business-procurement-process__content {
+  padding-bottom: 45px;
+}
+
+.business-procurement-process__content h3 {
+  margin: 3px 0 12px;
+
+  font-size: 1.25rem;
+  line-height: 1.4;
+
+  color: #0f172a;
+}
+
+.business-procurement-process__content p {
+  max-width: 680px;
+  margin: 0;
+
+  font-size: 0.98rem;
+  line-height: 1.8;
+
+  color: #64748b;
+}
+
+/* =========================
+   CONNECTING LINE
+========================= */
+
+.business-procurement-process__line {
+  position: absolute;
+
+  top: 64px;
+  left: 31px;
+
+  width: 2px;
+  height: calc(100% - 64px);
+
+  background-color: #e2e8f0;
+}
+
+/* =========================
+   HOVER EFFECT
+========================= */
+
+.business-procurement-process__step:hover
+  .business-procurement-process__number {
+  background-color: #d97706;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.business-procurement-process__step:hover
+  .business-procurement-process__content h3 {
+  color: #d97706;
+  transition: color 0.3s ease;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .business-procurement-process {
+    padding: 75px 20px;
+  }
+
+  .business-procurement-process__header {
+    margin-bottom: 50px;
+  }
+
+  .business-procurement-process__step {
+    grid-template-columns: 60px 1fr;
+    column-gap: 20px;
+  }
+
+  .business-procurement-process__number {
+    width: 52px;
+    height: 52px;
+
+    font-size: 0.8rem;
+  }
+
+  .business-procurement-process__line {
+    left: 25px;
+    top: 52px;
+    height: calc(100% - 52px);
+  }
+
+  .business-procurement-process__content {
+    padding-bottom: 40px;
+  }
+
+  .business-procurement-process__content h3 {
+    font-size: 1.1rem;
+  }
+
+  .business-procurement-process__content p {
+    font-size: 0.92rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .business-procurement-process {
+    padding: 60px 16px;
+  }
+
+  .business-procurement-process__header h2 {
+    font-size: 1.8rem;
+  }
+
+  .business-procurement-process__header p {
+    font-size: 0.92rem;
+  }
+
+  .business-procurement-process__step {
+    grid-template-columns: 50px 1fr;
+    column-gap: 15px;
+  }
+
+  .business-procurement-process__number {
+    width: 44px;
+    height: 44px;
+  }
+
+  .business-procurement-process__line {
+    left: 21px;
+    top: 44px;
+    height: calc(100% - 44px);
+  }
+
+  .business-procurement-process__content h3 {
+    margin-top: 0;
+    font-size: 1rem;
+  }
+
+  .business-procurement-process__content p {
+    font-size: 0.88rem;
+    line-height: 1.7;
+  }
+}

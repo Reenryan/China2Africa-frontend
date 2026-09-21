@@ -1,0 +1,354 @@
+.how-section {
+  padding: 110px 24px;
+  background-color: #ffffff;
+}
+
+.how-container {
+  width: min(1280px, 100%);
+  margin: 0 auto;
+}
+
+/* -------------------------
+   HEADER
+------------------------- */
+
+.how-header {
+  max-width: 760px;
+  margin: 0 auto 65px;
+  text-align: center;
+}
+
+.how-header .section-eyebrow {
+  display: inline-block;
+  margin-bottom: 16px;
+
+  color: #087a55;
+
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.how-title {
+  margin: 0;
+
+  color: #142235;
+
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+
+.how-title span {
+  color: #087a55;
+}
+
+.how-description {
+  max-width: 680px;
+  margin: 24px auto 0;
+
+  color: #687687;
+
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* -------------------------
+   STEPS
+------------------------- */
+
+.how-steps {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+
+  margin-top: 20px;
+}
+
+.how-step-wrapper {
+  position: relative;
+  display: flex;
+}
+
+.how-step {
+  position: relative;
+
+  width: 100%;
+  padding: 28px 22px;
+
+  background-color: #f8fbf8;
+
+  border: 1px solid #e2ebe6;
+  border-radius: 18px;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+
+  z-index: 2;
+}
+
+.how-step:hover {
+  transform: translateY(-6px);
+
+  border-color: #b9d9ca;
+
+  box-shadow: 0 18px 40px rgba(20, 34, 53, 0.08);
+}
+
+/* -------------------------
+   STEP TOP
+------------------------- */
+
+.how-step-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 25px;
+}
+
+.how-number {
+  color: #b2c6bc;
+
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.how-icon {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #ffffff;
+
+  border: 1px solid #dceae2;
+  border-radius: 14px;
+
+  font-size: 1.4rem;
+}
+
+/* -------------------------
+   STEP CONTENT
+------------------------- */
+
+.how-step h3 {
+  margin: 0 0 12px;
+
+  color: #142235;
+
+  font-size: 1.08rem;
+  line-height: 1.35;
+}
+
+.how-step p {
+  margin: 0;
+
+  color: #687687;
+
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+/* -------------------------
+   CONNECTOR
+------------------------- */
+
+.how-connector {
+  position: absolute;
+
+  right: -18px;
+  top: 50%;
+
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #087a55;
+
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+
+  color: #ffffff;
+
+  font-size: 0.9rem;
+  font-weight: 700;
+
+  transform: translateY(-50%);
+
+  z-index: 5;
+}
+
+/* -------------------------
+   CTA
+------------------------- */
+
+.how-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  margin-top: 60px;
+  padding: 35px 40px;
+
+  background-color: #087a55;
+
+  border-radius: 20px;
+
+  box-shadow: 0 20px 45px rgba(8, 122, 85, 0.16);
+}
+
+.how-cta-content h3 {
+  margin: 0 0 8px;
+
+  color: #ffffff;
+
+  font-size: 1.5rem;
+}
+
+.how-cta-content p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.82);
+
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.how-cta-button {
+  flex-shrink: 0;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 14px 22px;
+
+  background-color: #ffffff;
+  color: #087a55;
+
+  border-radius: 10px;
+
+  text-decoration: none;
+
+  font-size: 0.92rem;
+  font-weight: 700;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.how-cta-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.how-cta-button span {
+  font-size: 1.1rem;
+}
+
+/* -------------------------
+   LARGE TABLET
+------------------------- */
+
+@media (max-width: 1100px) {
+  .how-steps {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .how-step-wrapper {
+    display: block;
+  }
+
+  .how-connector {
+    display: none;
+  }
+}
+
+/* -------------------------
+   TABLET
+------------------------- */
+
+@media (max-width: 800px) {
+  .how-section {
+    padding: 90px 20px;
+  }
+
+  .how-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .how-cta {
+    padding: 30px;
+  }
+}
+
+/* -------------------------
+   MOBILE
+------------------------- */
+
+@media (max-width: 600px) {
+  .how-section {
+    padding: 80px 20px;
+  }
+
+  .how-header {
+    margin-bottom: 45px;
+  }
+
+  .how-title {
+    font-size: 2.5rem;
+  }
+
+  .how-description {
+    font-size: 0.95rem;
+  }
+
+  .how-steps {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .how-step {
+    padding: 25px;
+  }
+
+  .how-cta {
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 28px;
+  }
+
+  .how-cta-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* -------------------------
+   SMALL MOBILE
+------------------------- */
+
+@media (max-width: 420px) {
+  .how-section {
+    padding: 70px 16px;
+  }
+
+  .how-title {
+    font-size: 2.15rem;
+  }
+}

@@ -1,0 +1,469 @@
+/* =========================================
+   TRADE ACADEMY ARTICLE DETAIL
+========================================= */
+
+.trade-academy-article-detail {
+  width: 100%;
+  background: #ffffff;
+  color: #0f172a;
+}
+
+.trade-academy-article-detail__container {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+  padding: 40px 0 80px;
+}
+
+
+/* =========================================
+   BREADCRUMB
+========================================= */
+
+.trade-academy-article-detail__breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.trade-academy-article-detail__breadcrumb a {
+  color: #d97706;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.trade-academy-article-detail__breadcrumb a:hover {
+  color: #f59e0b;
+}
+
+.trade-academy-article-detail__breadcrumb span:last-child {
+  color: #475569;
+}
+
+
+/* =========================================
+   ARTICLE HEADER
+========================================= */
+
+.trade-academy-article-detail__header {
+  max-width: 900px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.trade-academy-article-detail__category {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: #fff7ed;
+  color: #c2410c;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.trade-academy-article-detail__header h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: #0f172a;
+}
+
+.trade-academy-article-detail__excerpt {
+  max-width: 760px;
+  margin: 24px auto 0;
+  font-size: 1.12rem;
+  line-height: 1.8;
+  color: #64748b;
+}
+
+.trade-academy-article-detail__meta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.trade-academy-article-detail__meta span:first-child {
+  color: #0f172a;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   FEATURED IMAGE
+========================================= */
+
+.trade-academy-article-detail__image-wrapper {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto 55px;
+  overflow: hidden;
+  border-radius: 24px;
+  background: #f1f5f9;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.12);
+}
+
+.trade-academy-article-detail__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: cover;
+}
+
+
+/* =========================================
+   ARTICLE CONTENT
+========================================= */
+
+.trade-academy-article-detail__content {
+  width: min(800px, 100%);
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: #334155;
+}
+
+.trade-academy-article-detail__content p {
+  margin: 0 0 24px;
+}
+
+.trade-academy-article-detail__content h2 {
+  margin: 50px 0 18px;
+  font-size: 1.8rem;
+  line-height: 1.3;
+  color: #0f172a;
+}
+
+.trade-academy-article-detail__content h3 {
+  margin: 38px 0 15px;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: #0f172a;
+}
+
+.trade-academy-article-detail__content strong {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.trade-academy-article-detail__content a {
+  color: #d97706;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.trade-academy-article-detail__content a:hover {
+  color: #f59e0b;
+}
+
+.trade-academy-article-detail__content ul,
+.trade-academy-article-detail__content ol {
+  margin: 0 0 28px;
+  padding-left: 25px;
+}
+
+.trade-academy-article-detail__content li {
+  margin-bottom: 10px;
+}
+
+.trade-academy-article-detail__content blockquote {
+  margin: 35px 0;
+  padding: 24px 28px;
+  border-left: 4px solid #f59e0b;
+  border-radius: 0 12px 12px 0;
+  background: #fff7ed;
+  color: #475569;
+  font-style: italic;
+}
+
+
+/* =========================================
+   BOTTOM NAVIGATION
+========================================= */
+
+.trade-academy-article-detail__bottom {
+  width: min(800px, 100%);
+  margin: 60px auto 0;
+  padding-top: 30px;
+  border-top: 1px solid #e2e8f0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.trade-academy-article-detail__bottom a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #d97706;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.2s ease;
+}
+
+.trade-academy-article-detail__bottom a:hover {
+  color: #f59e0b;
+}
+
+
+/* =========================================
+   LOADING STATE
+========================================= */
+
+.trade-academy-article-detail__loading {
+  min-height: 500px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.trade-academy-article-detail__loading-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 80px;
+  height: 80px;
+  margin-bottom: 25px;
+
+  border-radius: 50%;
+  background: #fff7ed;
+
+  font-size: 2rem;
+}
+
+.trade-academy-article-detail__loading span {
+  margin-bottom: 10px;
+
+  color: #d97706;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.trade-academy-article-detail__loading h1 {
+  margin: 0 0 12px;
+  font-size: 2rem;
+  color: #0f172a;
+}
+
+.trade-academy-article-detail__loading p {
+  margin: 0;
+  color: #64748b;
+}
+
+
+/* =========================================
+   NOT FOUND
+========================================= */
+
+.trade-academy-article-detail__not-found {
+  min-height: 500px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.trade-academy-article-detail__not-found-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 90px;
+  height: 90px;
+  margin-bottom: 25px;
+
+  border-radius: 50%;
+  background: #fff7ed;
+
+  font-size: 2.5rem;
+}
+
+.trade-academy-article-detail__not-found > span {
+  margin-bottom: 10px;
+
+  color: #d97706;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.trade-academy-article-detail__not-found h1 {
+  margin: 0 0 12px;
+  font-size: 2.2rem;
+  color: #0f172a;
+}
+
+.trade-academy-article-detail__not-found p {
+  max-width: 500px;
+  margin: 0 0 25px;
+
+  color: #64748b;
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   BACK BUTTON
+========================================= */
+
+.trade-academy-article-detail__back-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 13px 22px;
+
+  border-radius: 10px;
+
+  background: #0f172a;
+  color: #ffffff;
+
+  text-decoration: none;
+  font-weight: 700;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.trade-academy-article-detail__back-button:hover {
+  background: #1e293b;
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 768px) {
+  .trade-academy-article-detail__container {
+    padding: 30px 0 60px;
+  }
+
+  .trade-academy-article-detail__breadcrumb {
+    margin-bottom: 30px;
+  }
+
+  .trade-academy-article-detail__header {
+    margin-bottom: 35px;
+  }
+
+  .trade-academy-article-detail__header h1 {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+
+  .trade-academy-article-detail__excerpt {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .trade-academy-article-detail__image-wrapper {
+    margin-bottom: 40px;
+    border-radius: 18px;
+  }
+
+  .trade-academy-article-detail__content {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .trade-academy-article-detail__content h2 {
+    margin-top: 40px;
+    font-size: 1.55rem;
+  }
+
+  .trade-academy-article-detail__content h3 {
+    margin-top: 30px;
+    font-size: 1.3rem;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+  .trade-academy-article-detail__container {
+    width: 90%;
+    padding: 25px 0 50px;
+  }
+
+  .trade-academy-article-detail__breadcrumb {
+    gap: 7px;
+    margin-bottom: 25px;
+    font-size: 0.8rem;
+  }
+
+  .trade-academy-article-detail__category {
+    padding: 7px 12px;
+    font-size: 0.7rem;
+  }
+
+  .trade-academy-article-detail__header h1 {
+    font-size: 2rem;
+  }
+
+  .trade-academy-article-detail__excerpt {
+    font-size: 0.95rem;
+  }
+
+  .trade-academy-article-detail__meta {
+    font-size: 0.8rem;
+    gap: 7px;
+  }
+
+  .trade-academy-article-detail__image-wrapper {
+    border-radius: 14px;
+  }
+
+  .trade-academy-article-detail__content {
+    font-size: 0.98rem;
+  }
+
+  .trade-academy-article-detail__content h2 {
+    font-size: 1.4rem;
+  }
+
+  .trade-academy-article-detail__content h3 {
+    font-size: 1.2rem;
+  }
+
+  .trade-academy-article-detail__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .trade-academy-article-detail__loading h1,
+  .trade-academy-article-detail__not-found h1 {
+    font-size: 1.7rem;
+  }
+}

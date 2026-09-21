@@ -1,0 +1,175 @@
+.air-freight-services {
+  width: 100%;
+  padding: 100px 20px;
+
+  background-color: #f8fafc;
+}
+
+.air-freight-services__container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.air-freight-services__header {
+  max-width: 700px;
+  margin: 0 auto 60px;
+
+  text-align: center;
+}
+
+.air-freight-services__eyebrow {
+  display: inline-block;
+
+  margin-bottom: 16px;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  color: #d97706;
+}
+
+.air-freight-services__header h2 {
+  margin: 0 0 20px;
+
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.2;
+
+  color: #0f172a;
+}
+
+.air-freight-services__header h2 span {
+  display: block;
+  color: #d97706;
+}
+
+.air-freight-services__header p {
+  margin: 0;
+
+  font-size: 1rem;
+  line-height: 1.8;
+
+  color: #64748b;
+}
+
+.air-freight-services__grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.air-freight-services__card {
+  padding: 32px 28px;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+
+  background-color: #ffffff;
+
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.air-freight-services__card:hover {
+  transform: translateY(-5px);
+
+  border-color: #fed7aa;
+
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.09);
+}
+
+.air-freight-services__icon {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 22px;
+
+  border-radius: 12px;
+
+  background-color: #fff7ed;
+
+  font-size: 1.45rem;
+}
+
+.air-freight-services__card h3 {
+  margin: 0 0 12px;
+
+  font-size: 1.15rem;
+  line-height: 1.4;
+
+  color: #0f172a;
+}
+
+.air-freight-services__card p {
+  margin: 0;
+
+  font-size: 0.92rem;
+  line-height: 1.75;
+
+  color: #64748b;
+}
+
+
+/* Tablet */
+@media (max-width: 900px) {
+  .air-freight-services {
+    padding: 80px 20px;
+  }
+
+  .air-freight-services__header {
+    margin-bottom: 50px;
+  }
+
+  .air-freight-services__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+  .air-freight-services {
+    padding: 65px 16px;
+  }
+
+  .air-freight-services__header {
+    margin-bottom: 40px;
+  }
+
+  .air-freight-services__header h2 {
+    font-size: 1.9rem;
+  }
+
+  .air-freight-services__header p {
+    font-size: 0.92rem;
+    line-height: 1.75;
+  }
+
+  .air-freight-services__grid {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .air-freight-services__card {
+    padding: 27px 24px;
+  }
+
+  .air-freight-services__card h3 {
+    font-size: 1.05rem;
+  }
+
+  .air-freight-services__card p {
+    font-size: 0.88rem;
+  }
+}

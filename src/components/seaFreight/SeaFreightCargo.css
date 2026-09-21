@@ -1,0 +1,324 @@
+.sea-freight-cargo {
+  width: 100%;
+  padding: 100px 20px;
+  background-color: #ffffff;
+}
+
+.sea-freight-cargo__container {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.sea-freight-cargo__header {
+  max-width: 720px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.sea-freight-cargo__eyebrow {
+  display: inline-block;
+  margin-bottom: 16px;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  color: #d97706;
+}
+
+.sea-freight-cargo__header h2 {
+  margin: 0 0 20px;
+
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.2;
+
+  color: #0f172a;
+}
+
+.sea-freight-cargo__header h2 span {
+  color: #d97706;
+}
+
+.sea-freight-cargo__header p {
+  margin: 0;
+
+  font-size: 1rem;
+  line-height: 1.8;
+
+  color: #64748b;
+}
+
+/* CARGO TYPES */
+
+.sea-freight-cargo__types {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.sea-freight-cargo__card {
+  padding: 28px;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+
+  background-color: #f8fafc;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.sea-freight-cargo__card:hover {
+  transform: translateY(-4px);
+
+  border-color: #fed7aa;
+
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.07);
+}
+
+.sea-freight-cargo__icon {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 20px;
+
+  border-radius: 12px;
+
+  background-color: #fff7ed;
+
+  font-size: 1.5rem;
+}
+
+.sea-freight-cargo__card h3 {
+  margin: 0 0 10px;
+
+  font-size: 1.08rem;
+  line-height: 1.4;
+
+  color: #0f172a;
+}
+
+.sea-freight-cargo__card p {
+  margin: 0;
+
+  font-size: 0.9rem;
+  line-height: 1.7;
+
+  color: #64748b;
+}
+
+/* DETAILS */
+
+.sea-freight-cargo__details {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 70px;
+
+  margin-top: 75px;
+  padding: 50px;
+
+  border-radius: 20px;
+
+  background-color: #0f172a;
+}
+
+.sea-freight-cargo__details-content {
+  max-width: 500px;
+}
+
+.sea-freight-cargo__details-label {
+  display: inline-block;
+  margin-bottom: 15px;
+
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  color: #f59e0b;
+}
+
+.sea-freight-cargo__details-content h3 {
+  margin: 0 0 20px;
+
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  line-height: 1.2;
+
+  color: #ffffff;
+}
+
+.sea-freight-cargo__details-content h3 span {
+  color: #f59e0b;
+}
+
+.sea-freight-cargo__details-content p {
+  margin: 0;
+
+  font-size: 0.95rem;
+  line-height: 1.8;
+
+  color: #cbd5e1;
+}
+
+/* CHECKLIST */
+
+.sea-freight-cargo__checklist {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  align-content: center;
+}
+
+.sea-freight-cargo__check {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  min-height: 48px;
+  padding: 12px 15px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+
+  background-color: rgba(255, 255, 255, 0.05);
+
+  font-size: 0.88rem;
+  color: #e2e8f0;
+}
+
+.sea-freight-cargo__check-icon {
+  width: 25px;
+  height: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background-color: #f59e0b;
+
+  font-size: 0.75rem;
+  font-weight: 700;
+
+  color: #ffffff;
+}
+
+/* NOTE */
+
+.sea-freight-cargo__note {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+
+  max-width: 950px;
+
+  margin: 30px auto 0;
+  padding: 20px 24px;
+
+  border-left: 4px solid #f59e0b;
+  border-radius: 8px;
+
+  background-color: #fffbeb;
+}
+
+.sea-freight-cargo__note-icon {
+  flex-shrink: 0;
+  font-size: 1.1rem;
+}
+
+.sea-freight-cargo__note p {
+  margin: 0;
+
+  font-size: 0.85rem;
+  line-height: 1.7;
+
+  color: #64748b;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .sea-freight-cargo {
+    padding: 80px 20px;
+  }
+
+  .sea-freight-cargo__types {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sea-freight-cargo__details {
+    grid-template-columns: 1fr;
+    gap: 40px;
+
+    margin-top: 60px;
+    padding: 40px;
+  }
+
+  .sea-freight-cargo__details-content {
+    max-width: 700px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .sea-freight-cargo {
+    padding: 65px 16px;
+  }
+
+  .sea-freight-cargo__header {
+    margin-bottom: 40px;
+  }
+
+  .sea-freight-cargo__header h2 {
+    font-size: 1.9rem;
+  }
+
+  .sea-freight-cargo__header p {
+    font-size: 0.92rem;
+    line-height: 1.7;
+  }
+
+  .sea-freight-cargo__types {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .sea-freight-cargo__card {
+    padding: 24px;
+  }
+
+  .sea-freight-cargo__details {
+    margin-top: 45px;
+    padding: 30px 22px;
+    border-radius: 16px;
+  }
+
+  .sea-freight-cargo__details-content h3 {
+    font-size: 1.8rem;
+  }
+
+  .sea-freight-cargo__checklist {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .sea-freight-cargo__note {
+    padding: 18px;
+  }
+
+  .sea-freight-cargo__note p {
+    font-size: 0.82rem;
+  }
+}

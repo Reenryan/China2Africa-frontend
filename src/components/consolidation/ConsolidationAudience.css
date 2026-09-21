@@ -1,0 +1,263 @@
+.consolidation-audience {
+  padding: 105px 0;
+
+  background-color: #f6f8fa;
+}
+
+.consolidation-audience-container {
+  width: min(1180px, 90%);
+  margin: 0 auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.consolidation-audience-header {
+  display: grid;
+
+  grid-template-columns: 1fr 0.8fr;
+
+  gap: 80px;
+
+  align-items: end;
+
+  margin-bottom: 60px;
+}
+
+.consolidation-audience-eyebrow {
+  display: inline-block;
+
+  margin-bottom: 18px;
+
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  color: #087a55;
+}
+
+.consolidation-audience-title {
+  margin: 0;
+
+  font-size: clamp(38px, 4vw, 52px);
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+
+  color: #142235;
+}
+
+.consolidation-audience-title span {
+  color: #087a55;
+}
+
+.consolidation-audience-intro {
+  max-width: 500px;
+
+  margin: 0;
+
+  font-size: 17px;
+  line-height: 1.7;
+
+  color: #5f6b7a;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.consolidation-audience-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 20px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.consolidation-audience-card {
+  position: relative;
+
+  display: flex;
+  align-items: flex-start;
+
+  min-height: 190px;
+
+  padding: 30px;
+
+  background-color: #ffffff;
+
+  border: 1px solid #e1e7ec;
+  border-radius: 16px;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.consolidation-audience-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #cddbd5;
+
+  box-shadow: 0 16px 35px rgba(20, 34, 53, 0.08);
+}
+
+/* =========================
+   NUMBER
+========================= */
+
+.consolidation-audience-number {
+  flex-shrink: 0;
+
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 22px;
+
+  border-radius: 12px;
+
+  background-color: #e8f5ef;
+
+  color: #087a55;
+
+  font-size: 13px;
+  font-weight: 800;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.consolidation-audience-content {
+  padding-right: 25px;
+}
+
+.consolidation-audience-content h3 {
+  margin: 2px 0 10px;
+
+  font-size: 20px;
+  line-height: 1.3;
+
+  color: #142235;
+}
+
+.consolidation-audience-content p {
+  margin: 0;
+
+  font-size: 15px;
+  line-height: 1.7;
+
+  color: #687585;
+}
+
+/* =========================
+   CHECK
+========================= */
+
+.consolidation-audience-check {
+  position: absolute;
+
+  right: 25px;
+  top: 25px;
+
+  width: 28px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background-color: #e8f5ef;
+
+  color: #087a55;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+  .consolidation-audience {
+    padding: 85px 0;
+  }
+
+  .consolidation-audience-header {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+
+    align-items: start;
+  }
+
+  .consolidation-audience-intro {
+    max-width: 700px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+  .consolidation-audience {
+    padding: 65px 0;
+  }
+
+  .consolidation-audience-container {
+    width: min(92%, 1180px);
+  }
+
+  .consolidation-audience-title {
+    font-size: 38px;
+  }
+
+  .consolidation-audience-intro {
+    font-size: 16px;
+  }
+
+  .consolidation-audience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .consolidation-audience-card {
+    min-height: auto;
+
+    padding: 24px;
+  }
+
+  .consolidation-audience-number {
+    width: 46px;
+    height: 46px;
+
+    margin-right: 16px;
+  }
+
+  .consolidation-audience-content h3 {
+    font-size: 18px;
+  }
+
+  .consolidation-audience-content p {
+    font-size: 14px;
+  }
+
+  .consolidation-audience-check {
+    right: 18px;
+    top: 18px;
+  }
+}
