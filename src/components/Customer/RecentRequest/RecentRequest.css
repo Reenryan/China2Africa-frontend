@@ -1,0 +1,135 @@
+.recent-requests {
+  padding: 28px;
+
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
+}
+
+.recent-requests__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  margin-bottom: 25px;
+}
+
+.recent-requests__header span {
+  display: block;
+  margin-bottom: 6px;
+
+  color: #d97706;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+}
+
+.recent-requests__header h2 {
+  margin: 0;
+
+  color: #0f172a;
+  font-size: 1.25rem;
+}
+
+.recent-requests__header > a {
+  color: #d97706;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.recent-requests__header > a:hover {
+  color: #b45309;
+}
+
+.recent-requests__table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.recent-requests__table {
+  width: 100%;
+  min-width: 700px;
+
+  border-collapse: collapse;
+}
+
+.recent-requests__table th {
+  padding: 12px 14px;
+
+  background: #f8fafc;
+
+  color: #64748b;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.recent-requests__table td {
+  padding: 17px 14px;
+
+  border-bottom: 1px solid #f1f5f9;
+
+  color: #475569;
+  font-size: 0.82rem;
+}
+
+.recent-requests__table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.recent-requests__table td:first-child a {
+  color: #d97706;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.recent-requests__table td:first-child a:hover {
+  text-decoration: underline;
+}
+
+.recent-requests__status {
+  display: inline-block;
+
+  padding: 5px 9px;
+
+  border-radius: 20px;
+
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.recent-requests__status--pending {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+.recent-requests__status--confirmed {
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.recent-requests__status--completed {
+  background: #f0fdf4;
+  color: #15803d;
+}
+
+@media (max-width: 600px) {
+  .recent-requests {
+    padding: 20px 16px;
+  }
+
+  .recent-requests__header {
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .recent-requests__header > a {
+    white-space: nowrap;
+  }
+}

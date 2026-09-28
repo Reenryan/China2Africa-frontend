@@ -25,7 +25,7 @@ function CTASection() {
 
           <div className="cta-actions">
             <Link
-              to="/signup"
+              to="/register"
               className="cta-primary-button"
             >
               Start a Sourcing Request

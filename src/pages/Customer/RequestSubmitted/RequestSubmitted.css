@@ -1,0 +1,255 @@
+.request-submitted-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: calc(100vh - 80px);
+  padding: 70px 0;
+
+  background: #f8fafc;
+}
+
+.request-submitted-page__container {
+  width: min(780px, calc(100% - 48px));
+
+  padding: 50px;
+
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+
+  text-align: center;
+
+  box-shadow: 0 12px 35px rgba(15, 23, 42, 0.06);
+}
+
+.request-submitted-page__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 64px;
+  height: 64px;
+
+  margin: 0 auto 20px;
+
+  border-radius: 50%;
+
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+
+  color: #15803d;
+
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.request-submitted-page__label {
+  display: inline-block;
+
+  margin-bottom: 15px;
+
+  color: #d97706;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+
+  letter-spacing: 1.4px;
+}
+
+.request-submitted-page__container h1 {
+  max-width: 600px;
+
+  margin: 0 auto;
+
+  color: #0f172a;
+
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  line-height: 1.15;
+}
+
+.request-submitted-page__container h1 strong {
+  color: #d97706;
+}
+
+.request-submitted-page__intro {
+  max-width: 600px;
+
+  margin: 18px auto 25px;
+
+  color: #64748b;
+
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+.request-submitted-page__request-number {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 6px;
+
+  min-width: 190px;
+
+  margin-bottom: 40px;
+  padding: 15px 25px;
+
+  border: 1px solid #fed7aa;
+  border-radius: 9px;
+
+  background: #fff7ed;
+}
+
+.request-submitted-page__request-number span {
+  color: #c2410c;
+
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.request-submitted-page__request-number strong {
+  color: #0f172a;
+
+  font-size: 1.15rem;
+  letter-spacing: 0.5px;
+}
+
+.request-submitted-page__next {
+  padding-top: 30px;
+
+  border-top: 1px solid #e2e8f0;
+
+  text-align: left;
+}
+
+.request-submitted-page__next h2 {
+  margin: 0 0 20px;
+
+  color: #0f172a;
+
+  font-size: 1.05rem;
+}
+
+.request-submitted-page__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.request-submitted-page__steps > div {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.request-submitted-page__steps > div > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #fff7ed;
+  color: #d97706;
+
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.request-submitted-page__steps h3 {
+  margin: 2px 0 4px;
+
+  color: #334155;
+
+  font-size: 0.82rem;
+}
+
+.request-submitted-page__steps p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+
+.request-submitted-page__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  margin-top: 40px;
+}
+
+.request-submitted-page__primary,
+.request-submitted-page__secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+
+  padding: 12px 18px;
+
+  border-radius: 8px;
+
+  font-size: 0.8rem;
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+.request-submitted-page__primary {
+  background: #d97706;
+  color: #ffffff;
+}
+
+.request-submitted-page__primary:hover {
+  background: #b45309;
+}
+
+.request-submitted-page__secondary {
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: #475569;
+}
+
+.request-submitted-page__secondary:hover {
+  background: #f8fafc;
+}
+
+.request-submitted-page__note {
+  margin: 20px 0 0;
+
+  color: #94a3b8;
+
+  font-size: 0.7rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .request-submitted-page {
+    min-height: calc(100vh - 70px);
+    padding: 35px 0;
+  }
+
+  .request-submitted-page__container {
+    width: calc(100% - 32px);
+    padding: 30px 22px;
+  }
+
+  .request-submitted-page__actions {
+    flex-direction: column;
+  }
+
+  .request-submitted-page__primary,
+  .request-submitted-page__secondary {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

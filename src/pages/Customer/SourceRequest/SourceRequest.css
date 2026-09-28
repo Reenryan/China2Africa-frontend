@@ -1,0 +1,137 @@
+.source-request-page {
+  display: flex;
+  min-height: calc(100vh - 80px);
+  background: #f8fafc;
+}
+
+.source-request-page__main {
+  flex: 1;
+  min-width: 0;
+}
+
+.source-request-page__content {
+  width: min(1000px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 45px 0 70px;
+}
+
+.source-request-page__heading {
+  margin-bottom: 35px;
+}
+
+.source-request-page__heading > span {
+  display: inline-block;
+  margin-bottom: 12px;
+
+  color: #d97706;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.source-request-page__heading h1 {
+  margin: 0;
+
+  color: #0f172a;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  line-height: 1.15;
+}
+
+.source-request-page__heading h1 strong {
+  color: #d97706;
+}
+
+.source-request-page__heading p {
+  max-width: 650px;
+  margin: 14px 0 0;
+
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* STEPS */
+
+.source-request-page__steps {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 30px;
+  padding: 18px 25px;
+
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.source-request-page__step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  flex: 1;
+
+  color: #94a3b8;
+}
+
+.source-request-page__step span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 32px;
+  height: 32px;
+
+  border: 1px solid #cbd5e1;
+  border-radius: 50%;
+
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.source-request-page__step p {
+  margin: 0;
+
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.source-request-page__step--active {
+  color: #d97706;
+}
+
+.source-request-page__step--active span {
+  border-color: #d97706;
+  background: #d97706;
+  color: #ffffff;
+}
+
+.source-request-page__form-container {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .source-request-page__content {
+    width: calc(100% - 32px);
+    padding: 35px 0 55px;
+  }
+}
+
+@media (max-width: 600px) {
+  .source-request-page__steps {
+    padding: 15px;
+  }
+
+  .source-request-page__step {
+    justify-content: center;
+  }
+
+  .source-request-page__step p {
+    display: none;
+  }
+
+  .source-request-page__step span {
+    width: 30px;
+    height: 30px;
+  }
+}

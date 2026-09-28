@@ -1,0 +1,121 @@
+.about-values {
+  width: 100%;
+  padding: 85px 0;
+  background: #ffffff;
+}
+
+.about-values__container {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.about-values__heading {
+  max-width: 800px;
+  margin-bottom: 45px;
+}
+
+.about-values__heading > span {
+  display: block;
+  margin-bottom: 15px;
+  color: #d97706;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.about-values__heading h2 {
+  margin: 0;
+  color: #0f172a;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.2;
+}
+
+.about-values__heading h2 strong {
+  color: #d97706;
+}
+
+.about-values__heading p {
+  max-width: 720px;
+  margin: 20px 0 0;
+  color: #64748b;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.about-values__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.about-values__card {
+  display: flex;
+  gap: 24px;
+  padding: 32px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.about-values__card:hover {
+  transform: translateY(-3px);
+  border-color: #cbd5e1;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.07);
+}
+
+.about-values__number {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: #0f172a;
+  color: #f59e0b;
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.about-values__card-content h3 {
+  margin: 2px 0 12px;
+  color: #0f172a;
+  font-size: 1.3rem;
+}
+
+.about-values__card-content p {
+  margin: 0;
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+@media (max-width: 850px) {
+  .about-values__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-values {
+    padding: 65px 0;
+  }
+
+  .about-values__container {
+    width: calc(100% - 32px);
+  }
+
+  .about-values__card {
+    gap: 18px;
+    padding: 26px;
+  }
+
+  .about-values__number {
+    width: 44px;
+    height: 44px;
+  }
+}

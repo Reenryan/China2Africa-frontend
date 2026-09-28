@@ -365,13 +365,6 @@ const Navbar = () => {
                 </Link>
 
                 <Link
-                  to="/resources/kenya-import-updates"
-                  onClick={closeMenu}
-                >
-                  Kenya Import Updates
-                </Link>
-
-                <Link
                   to="/resources/testimonials"
                   onClick={closeMenu}
                 >

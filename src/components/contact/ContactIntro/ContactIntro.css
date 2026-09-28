@@ -1,0 +1,49 @@
+.contact-intro {
+  width: 100%;
+  padding: 70px 0 45px;
+  background: #ffffff;
+}
+
+.contact-intro__container {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.contact-intro__container > span {
+  display: block;
+  margin-bottom: 15px;
+  color: #d97706;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.contact-intro h2 {
+  max-width: 850px;
+  margin: 0;
+  color: #0f172a;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.2;
+}
+
+.contact-intro h2 strong {
+  color: #d97706;
+}
+
+.contact-intro p {
+  max-width: 800px;
+  margin: 20px 0 0;
+  color: #64748b;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .contact-intro {
+    padding: 55px 0 35px;
+  }
+
+  .contact-intro__container {
+    width: calc(100% - 32px);
+  }
+}

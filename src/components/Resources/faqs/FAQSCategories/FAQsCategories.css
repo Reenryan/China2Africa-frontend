@@ -1,0 +1,29 @@
+.faqs-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.faqs-categories__button {
+  padding: 9px 15px;
+  border: 1px solid #e2e8f0;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #475569;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.faqs-categories__button:hover {
+  border-color: #f59e0b;
+  color: #d97706;
+}
+
+.faqs-categories__button--active {
+  border-color: #f59e0b;
+  background: #f59e0b;
+  color: #0f172a;
+}

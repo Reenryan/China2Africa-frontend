@@ -1,0 +1,360 @@
+/* ========================================
+   SIDEBAR - DESKTOP
+   ======================================== */
+
+.dashboard-sidebar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  width: 250px;
+  height: 100vh;
+
+  flex-shrink: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 25px 18px;
+
+  box-sizing: border-box;
+
+  background: #0f172a;
+  color: #ffffff;
+}
+
+
+/* ========================================
+   BRAND
+   ======================================== */
+
+.dashboard-sidebar__brand {
+  margin-bottom: 35px;
+}
+
+.dashboard-sidebar__brand > div {
+  min-width: 0;
+}
+
+.dashboard-sidebar__brand span {
+  display: block;
+
+  color: #ffffff;
+
+  font-size: 0.95rem;
+  font-weight: 800;
+
+  letter-spacing: 0.8px;
+}
+
+.dashboard-sidebar__brand p {
+  margin: 4px 0 0;
+
+  color: #94a3b8;
+
+  font-size: 0.7rem;
+}
+
+
+/* ========================================
+   NAVIGATION
+   ======================================== */
+
+.dashboard-sidebar__nav {
+  display: flex;
+  flex-direction: column;
+
+  gap: 6px;
+}
+
+.dashboard-sidebar__label {
+  margin: 0 0 10px;
+  padding-left: 10px;
+
+  color: #64748b;
+
+  font-size: 0.65rem;
+  font-weight: 700;
+
+  letter-spacing: 1.2px;
+}
+
+.dashboard-sidebar__label--account {
+  margin-top: 25px;
+}
+
+
+/* ========================================
+   NAVIGATION LINKS
+   ======================================== */
+
+.dashboard-sidebar__link {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 11px 12px;
+
+  border-radius: 8px;
+
+  color: #cbd5e1;
+
+  font-size: 0.8rem;
+  font-weight: 500;
+
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.dashboard-sidebar__link span {
+  width: 20px;
+
+  flex-shrink: 0;
+
+  color: #94a3b8;
+
+  font-size: 1rem;
+
+  text-align: center;
+}
+
+.dashboard-sidebar__link:hover {
+  background: #1e293b;
+  color: #ffffff;
+}
+
+.dashboard-sidebar__link:hover span {
+  color: #f59e0b;
+}
+
+
+/* ========================================
+   ACTIVE LINK
+   ======================================== */
+
+.dashboard-sidebar__link--active {
+  background: #1e293b;
+
+  color: #ffffff;
+}
+
+.dashboard-sidebar__link--active span {
+  color: #f59e0b;
+}
+
+
+/* ========================================
+   NEW REQUEST BUTTON
+   ======================================== */
+
+.dashboard-sidebar__link--request {
+  margin-top: 8px;
+
+  background: #d97706;
+
+  color: #ffffff;
+}
+
+.dashboard-sidebar__link--request span {
+  color: #ffffff;
+}
+
+.dashboard-sidebar__link--request:hover {
+  background: #b45309;
+
+  color: #ffffff;
+}
+
+.dashboard-sidebar__link--request:hover span {
+  color: #ffffff;
+}
+
+
+/* ========================================
+   SIDEBAR BOTTOM
+   ======================================== */
+
+.dashboard-sidebar__bottom {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+
+  margin-top: auto;
+  padding-top: 25px;
+
+  border-top: 1px solid #1e293b;
+}
+
+
+/* ========================================
+   BACK TO WEBSITE
+   ======================================== */
+
+.dashboard-sidebar__website {
+  display: block;
+
+  color: #94a3b8;
+
+  font-size: 0.75rem;
+
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.dashboard-sidebar__website:hover {
+  color: #ffffff;
+}
+
+
+/* ========================================
+   LOGOUT
+   ======================================== */
+
+.dashboard-sidebar__logout {
+  width: 100%;
+
+  padding: 10px 12px;
+
+  border: 1px solid #334155;
+  border-radius: 8px;
+
+  background: transparent;
+
+  color: #cbd5e1;
+
+  font-size: 0.75rem;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease,
+    background 0.2s ease;
+}
+
+.dashboard-sidebar__logout:hover {
+  border-color: #f59e0b;
+
+  background: rgba(245, 158, 11, 0.05);
+
+  color: #f59e0b;
+}
+
+
+/* ========================================
+   CLOSE BUTTON
+   ======================================== */
+
+.dashboard-sidebar__close {
+  display: none;
+
+  width: 32px;
+  height: 32px;
+
+  padding: 0;
+
+  border: 0;
+
+  border-radius: 6px;
+
+  background: transparent;
+
+  color: #94a3b8;
+
+  font-size: 1.7rem;
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.dashboard-sidebar__close:hover {
+  background: #1e293b;
+
+  color: #ffffff;
+}
+
+
+/* ========================================
+   MOBILE SIDEBAR
+   ======================================== */
+
+@media (max-width: 900px) {
+
+  .dashboard-sidebar {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    z-index: 1000;
+
+    width: 270px;
+    height: 100vh;
+
+    padding: 25px 18px;
+
+    transform: translateX(-100%);
+
+    transition: transform 0.25s ease;
+
+    box-shadow: 12px 0 30px rgba(15, 23, 42, 0.2);
+  }
+
+
+  /* Sidebar opened */
+
+  .dashboard-sidebar--open {
+    transform: translateX(0);
+  }
+
+
+  /* Mobile brand */
+
+  .dashboard-sidebar__brand {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+
+  /* Show close button */
+
+  .dashboard-sidebar__close {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+  }
+}
+
+
+/* ========================================
+   SMALL PHONES
+   ======================================== */
+
+@media (max-width: 400px) {
+
+  .dashboard-sidebar {
+    width: 260px;
+
+    padding: 22px 16px;
+  }
+
+  .dashboard-sidebar__link {
+    padding: 10px 11px;
+
+    font-size: 0.78rem;
+  }
+}

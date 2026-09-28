@@ -1,0 +1,145 @@
+.product-image-upload {
+  padding-top: 4px;
+}
+
+.product-image-upload__label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.product-image-upload__label label {
+  color: #334155;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.product-image-upload__label span {
+  color: #94a3b8;
+  font-size: 0.7rem;
+}
+
+.product-image-upload__description {
+  margin: 6px 0 12px;
+
+  color: #64748b;
+  font-size: 0.74rem;
+  line-height: 1.5;
+}
+
+.product-image-upload input[type="file"] {
+  display: none;
+}
+
+.product-image-upload__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 130px;
+
+  padding: 20px;
+
+  border: 1px dashed #cbd5e1;
+  border-radius: 8px;
+
+  background: #f8fafc;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.product-image-upload__box:hover {
+  border-color: #f59e0b;
+  background: #fffaf2;
+}
+
+.product-image-upload__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 35px;
+  height: 35px;
+
+  margin-bottom: 8px;
+
+  border-radius: 50%;
+
+  background: #fff7ed;
+  color: #d97706;
+
+  font-size: 1.2rem;
+}
+
+.product-image-upload__box strong {
+  color: #334155;
+  font-size: 0.8rem;
+}
+
+.product-image-upload__box small {
+  margin-top: 4px;
+
+  color: #94a3b8;
+  font-size: 0.68rem;
+}
+
+.product-image-upload__preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  margin-top: 12px;
+}
+
+.product-image-upload__image {
+  position: relative;
+
+  width: 82px;
+  height: 82px;
+
+  border-radius: 7px;
+
+  overflow: hidden;
+
+  border: 1px solid #e2e8f0;
+}
+
+.product-image-upload__image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.product-image-upload__image button {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 21px;
+  height: 21px;
+
+  border: 0;
+  border-radius: 50%;
+
+  background: rgba(15, 23, 42, 0.75);
+  color: #ffffff;
+
+  font-size: 0.9rem;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+.product-image-upload__image button:hover {
+  background: #dc2626;
+}
